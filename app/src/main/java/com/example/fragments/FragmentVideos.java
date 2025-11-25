@@ -1,4 +1,4 @@
-package blogtalk.com.fragments;
+package com.example.fragments;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -12,15 +12,15 @@ import androidx.fragment.app.Fragment;
 import androidx.media3.common.util.UnstableApi;
 import androidx.viewpager2.widget.ViewPager2;
 
-import blogtalk.com.adapters.AdapterPostVideoDetailPager;
-import blogtalk.com.apiservices.APIClient;
-import blogtalk.com.apiservices.APIInterface;
-import blogtalk.com.apiservices.RespPostList;
-import blogtalk.com.items.ItemPost;
-import blogtalk.com.socialmedia.R;
-import blogtalk.com.utils.Constants;
-import blogtalk.com.utils.Methods;
-import blogtalk.com.utils.SharedPref;
+import com.example.adapters.AdapterPostVideoDetailPager;
+import com.example.apiservices.APIClient;
+import com.example.apiservices.APIInterface;
+import com.example.apiservices.RespPostList;
+import com.example.items.ItemPost;
+import com.example.socialmedia.R;
+import com.example.utils.Constants;
+import com.example.utils.Methods;
+import com.example.utils.SharedPref;
 import com.google.android.material.button.MaterialButton;
 
 import java.util.ArrayList;

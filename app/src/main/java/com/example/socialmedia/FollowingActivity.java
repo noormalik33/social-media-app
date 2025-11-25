@@ -1,4 +1,4 @@
-package blogtalk.com.socialmedia;
+package com.example.socialmedia;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,9 +12,9 @@ import android.os.Bundle;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import blogtalk.com.fragments.FragmentUserFollow;
-import blogtalk.com.utils.Methods;
-import blogtalk.com.utils.SharedPref;
+import com.example.fragments.FragmentUserFollow;
+import com.example.utils.Methods;
+import com.example.utils.SharedPref;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;

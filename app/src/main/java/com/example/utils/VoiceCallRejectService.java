@@ -1,12 +1,12 @@
-package blogtalk.com.utils;
+package com.example.utils;
 
 import android.app.IntentService;
 import android.content.Intent;
 
 import androidx.core.app.NotificationManagerCompat;
 
-import blogtalk.com.chat.ChatHelper;
-import blogtalk.com.eventbus.GlobalBus;
+import com.example.chat.ChatHelper;
+import com.example.eventbus.GlobalBus;
 
 import io.agora.rtm.ErrorInfo;
 import io.agora.rtm.PublishOptions;

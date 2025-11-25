@@ -1,4 +1,4 @@
-package blogtalk.com.utils;
+package com.example.utils;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -7,7 +7,7 @@ import android.net.Uri;
 import android.provider.MediaStore;
 import android.util.Log;
 
-import blogtalk.com.items.ItemMedia;
+import com.example.items.ItemMedia;
 
 import java.util.ArrayList;
 import java.util.Arrays;

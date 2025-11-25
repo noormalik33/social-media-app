@@ -1,7 +1,7 @@
-package blogtalk.com.interfaces;
+package com.example.interfaces;
 
-import blogtalk.com.items.ItemComments;
-import blogtalk.com.items.ItemLanguage;
+import com.example.items.ItemComments;
+import com.example.items.ItemLanguage;
 
 import java.util.ArrayList;
 

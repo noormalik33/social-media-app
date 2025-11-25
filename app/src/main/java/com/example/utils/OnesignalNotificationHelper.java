@@ -1,4 +1,4 @@
-package blogtalk.com.utils;
+package com.example.utils;
 
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -17,17 +17,17 @@ import androidx.annotation.NonNull;
 import androidx.core.app.NotificationCompat;
 import androidx.core.content.ContextCompat;
 
-import blogtalk.com.apiservices.APIClient;
-import blogtalk.com.apiservices.APIInterface;
-import blogtalk.com.apiservices.RespPostDetails;
-import blogtalk.com.items.ItemNotification;
-import blogtalk.com.items.ItemUser;
-import blogtalk.com.socialmedia.FollowRequestActivity;
-import blogtalk.com.socialmedia.PostDetailActivity;
-import blogtalk.com.socialmedia.ProfileActivity;
-import blogtalk.com.socialmedia.R;
-import blogtalk.com.socialmedia.SplashActivity;
-import blogtalk.com.socialmedia.TextPostDetailActivity;
+import com.example.apiservices.APIClient;
+import com.example.apiservices.APIInterface;
+import com.example.apiservices.RespPostDetails;
+import com.example.items.ItemNotification;
+import com.example.items.ItemUser;
+import com.example.socialmedia.FollowRequestActivity;
+import com.example.socialmedia.PostDetailActivity;
+import com.example.socialmedia.ProfileActivity;
+import com.example.socialmedia.R;
+import com.example.socialmedia.SplashActivity;
+import com.example.socialmedia.TextPostDetailActivity;
 import com.onesignal.notifications.IDisplayableMutableNotification;
 import com.onesignal.notifications.INotificationReceivedEvent;
 import com.onesignal.notifications.INotificationServiceExtension;

@@ -1,4 +1,4 @@
-package blogtalk.compackage blogtalk.com.adapters;
+package com.example.adapters;
 
 import android.app.Activity;
 import android.content.Context;
@@ -16,10 +16,10 @@ import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
-import blogtalk.com.socialmedia.DownloadDetailActivity;
-import blogtalk.com.socialmedia.R;
-import blogtalk.com.utils.Constants;
-import blogtalk.com.utils.Methods;
+import com.example.socialmedia.DownloadDetailActivity;
+import com.example.socialmedia.R;
+import com.example.utils.Constants;
+import com.example.utils.Methods;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.button.MaterialButton;
 import com.squareup.picasso.Picasso;

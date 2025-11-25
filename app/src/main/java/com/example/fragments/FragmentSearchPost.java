@@ -1,4 +1,4 @@
-package blogtalk.com.fragments;
+package com.example.fragments;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -17,16 +17,16 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import blogtalk.com.adapters.AdapterSearch;
-import blogtalk.com.apiservices.APIClient;
-import blogtalk.com.apiservices.APIInterface;
-import blogtalk.com.apiservices.RespPostList;
-import blogtalk.com.items.ItemPost;
-import blogtalk.com.socialmedia.R;
-import blogtalk.com.utils.Constants;
-import blogtalk.com.utils.EndlessRecyclerViewScrollListener;
-import blogtalk.com.utils.Methods;
-import blogtalk.com.utils.SharedPref;
+import com.example.adapters.AdapterSearch;
+import com.example.apiservices.APIClient;
+import com.example.apiservices.APIInterface;
+import com.example.apiservices.RespPostList;
+import com.example.items.ItemPost;
+import com.example.socialmedia.R;
+import com.example.utils.Constants;
+import com.example.utils.EndlessRecyclerViewScrollListener;
+import com.example.utils.Methods;
+import com.example.utils.SharedPref;
 import com.google.android.material.textfield.TextInputEditText;
 
 import java.util.ArrayList;

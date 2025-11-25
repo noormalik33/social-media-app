@@ -1,4 +1,4 @@
-package blogtalk.compackage blogtalk.com.adapters;
+package com.example.adapters;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,13 +7,13 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import blogtalk.com.interfaces.DoubleClickListener;
-import blogtalk.com.items.ItemImageGallery;
-import blogtalk.com.items.ItemPost;
-import blogtalk.com.items.ItemStories;
-import blogtalk.com.socialmedia.R;
-import blogtalk.com.utils.Constants;
-import blogtalk.com.utils.DoubleClick;
+import com.example.interfaces.DoubleClickListener;
+import com.example.items.ItemImageGallery;
+import com.example.items.ItemPost;
+import com.example.items.ItemStories;
+import com.example.socialmedia.R;
+import com.example.utils.Constants;
+import com.example.utils.DoubleClick;
 import com.makeramen.roundedimageview.RoundedImageView;
 import com.squareup.picasso.Picasso;
 

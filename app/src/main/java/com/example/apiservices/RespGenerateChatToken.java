@@ -1,4 +1,4 @@
-package blogtalk.com.apiservices;
+package com.example.apiservices;
 
 import com.google.gson.annotations.SerializedName;
 

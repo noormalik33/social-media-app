@@ -1,6 +1,6 @@
-package blogtalk.com.apiservices;
+package com.example.apiservices;
 
-import blogtalk.com.utils.Constants;
+import com.example.utils.Constants;
 
 import okhttp3.RequestBody;
 import retrofit2.Call;

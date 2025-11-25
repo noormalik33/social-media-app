@@ -1,4 +1,4 @@
-package blogtalk.com.chat;
+package com.example.chat;
 
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -17,10 +17,10 @@ import android.os.Vibrator;
 import androidx.core.app.NotificationCompat;
 import androidx.core.content.ContextCompat;
 
-import blogtalk.com.items.ItemChatList;
-import blogtalk.com.socialmedia.ChatListActivity;
-import blogtalk.com.socialmedia.R;
-import blogtalk.com.utils.DBHelper;
+import com.example.items.ItemChatList;
+import com.example.socialmedia.ChatListActivity;
+import com.example.socialmedia.R;
+import com.example.utils.DBHelper;
 
 import java.io.IOException;
 import java.io.InputStream;

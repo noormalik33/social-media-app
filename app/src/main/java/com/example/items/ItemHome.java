@@ -1,4 +1,4 @@
-package blogtalk.com.items;
+package com.example.items;
 
 import java.io.Serializable;
 import java.util.ArrayList;

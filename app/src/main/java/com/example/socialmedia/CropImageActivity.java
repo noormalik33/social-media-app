@@ -1,4 +1,4 @@
-package blogtalk.com.socialmedia;
+package com.example.socialmedia;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -10,7 +10,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import blogtalk.com.utils.Methods;
+import com.example.utils.Methods;
 import com.google.android.material.button.MaterialButton;
 import com.naver.android.helloyako.imagecrop.view.ImageCropView;
 

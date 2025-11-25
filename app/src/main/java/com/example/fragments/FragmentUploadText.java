@@ -1,4 +1,4 @@
-package blogtalk.com.fragments;
+package com.example.fragments;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -11,8 +11,8 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import blogtalk.com.socialmedia.R;
-import blogtalk.com.socialmedia.UploadActivity;
+import com.example.socialmedia.R;
+import com.example.socialmedia.UploadActivity;
 import com.google.android.material.textfield.TextInputEditText;
 import com.makeramen.roundedimageview.RoundedImageView;
 

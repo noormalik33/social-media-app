@@ -1,8 +1,8 @@
-package blogtalk.com.utils;
+package com.example.utils;
 
 import android.util.Base64;
 
-import blogtalk.com.socialmedia.BuildConfig;
+import com.example.socialmedia.BuildConfig;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 

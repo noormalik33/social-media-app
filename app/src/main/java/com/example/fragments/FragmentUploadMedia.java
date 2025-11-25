@@ -1,4 +1,4 @@
-package blogtalk.com.fragments;
+package com.example.fragments;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -37,18 +37,18 @@ import androidx.media3.ui.PlayerView;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import blogtalk.com.adapters.AdapterImages;
-import blogtalk.com.interfaces.ClickListener;
-import blogtalk.com.items.ItemMedia;
-import blogtalk.com.socialmedia.AddPostActivity;
-import blogtalk.com.socialmedia.R;
-import blogtalk.com.utils.BackgroundTask;
-import blogtalk.com.utils.Constants;
-import blogtalk.com.utils.MediaStoreHelper;
-import blogtalk.com.utils.Methods;
-import blogtalk.com.utils.RecyclerItemClickListener;
-import blogtalk.com.utils.RecyclerViewDecoration;
-import blogtalk.com.utils.SharedPref;
+import com.example.adapters.AdapterImages;
+import com.example.interfaces.ClickListener;
+import com.example.items.ItemMedia;
+import com.example.socialmedia.AddPostActivity;
+import com.example.socialmedia.R;
+import com.example.utils.BackgroundTask;
+import com.example.utils.Constants;
+import com.example.utils.MediaStoreHelper;
+import com.example.utils.Methods;
+import com.example.utils.RecyclerItemClickListener;
+import com.example.utils.RecyclerViewDecoration;
+import com.example.utils.SharedPref;
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.google.android.material.button.MaterialButton;

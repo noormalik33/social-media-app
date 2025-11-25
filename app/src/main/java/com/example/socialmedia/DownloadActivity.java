@@ -1,4 +1,4 @@
-package blogtalk.com.socialmedia;
+package com.example.socialmedia;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -12,8 +12,8 @@ import androidx.lifecycle.Lifecycle;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
 
-import blogtalk.com.fragments.FragmentDownloads;
-import blogtalk.com.utils.Methods;
+import com.example.fragments.FragmentDownloads;
+import com.example.utils.Methods;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 

@@ -1,4 +1,4 @@
-package blogtalk.com.utils;
+package com.example.utils;
 
 import android.content.Context;
 import android.view.GestureDetector;

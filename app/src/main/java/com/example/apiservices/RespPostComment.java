@@ -1,6 +1,6 @@
-package blogtalk.com.apiservices;
+package com.example.apiservices;
 
-import blogtalk.com.items.ItemComments;
+import com.example.items.ItemComments;
 import com.google.gson.annotations.SerializedName;
 
 import java.util.ArrayList;

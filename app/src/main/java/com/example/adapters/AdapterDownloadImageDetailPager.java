@@ -1,4 +1,4 @@
-package blogtalk.compackage blogtalk.com.adapters;
+package com.example.adapters;
 
 import android.content.Context;
 import android.net.Uri;
@@ -11,8 +11,8 @@ import android.widget.ProgressBar;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import blogtalk.com.socialmedia.R;
-import blogtalk.com.utils.Methods;
+import com.example.socialmedia.R;
+import com.example.utils.Methods;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;

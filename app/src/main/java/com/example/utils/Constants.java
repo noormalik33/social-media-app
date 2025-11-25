@@ -1,15 +1,15 @@
-package blogtalk.com.utils;
+package com.example.utils;
 
 import android.graphics.Bitmap;
 import android.net.Uri;
 
-import blogtalk.com.items.ItemAbout;
-import blogtalk.com.items.ItemCustomAds;
-import blogtalk.com.items.ItemLinks;
-import blogtalk.com.items.ItemPage;
-import blogtalk.com.items.ItemPost;
-import blogtalk.com.items.ItemStories;
-import blogtalk.com.socialmedia.BuildConfig;
+import com.example.items.ItemAbout;
+import com.example.items.ItemCustomAds;
+import com.example.items.ItemLinks;
+import com.example.items.ItemPage;
+import com.example.items.ItemPost;
+import com.example.items.ItemStories;
+import com.example.socialmedia.BuildConfig;
 
 import java.io.Serializable;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package blogtalk.com.items;
+package com.example.items;
 
 import android.net.Uri;
 

@@ -1,4 +1,4 @@
-package blogtalk.com.socialmedia;
+package com.example.socialmedia;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -16,16 +16,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import blogtalk.com.adapters.AdapterWithdraw;
-import blogtalk.com.apiservices.APIClient;
-import blogtalk.com.apiservices.APIInterface;
-import blogtalk.com.apiservices.RespWithdrawList;
-import blogtalk.com.items.ItemUser;
-import blogtalk.com.items.ItemWithdraw;
-import blogtalk.com.utils.Constants;
-import blogtalk.com.utils.EndlessRecyclerViewScrollListener;
-import blogtalk.com.utils.Methods;
-import blogtalk.com.utils.SharedPref;
+import com.example.adapters.AdapterWithdraw;
+import com.example.apiservices.APIClient;
+import com.example.apiservices.APIInterface;
+import com.example.apiservices.RespWithdrawList;
+import com.example.items.ItemUser;
+import com.example.items.ItemWithdraw;
+import com.example.utils.Constants;
+import com.example.utils.EndlessRecyclerViewScrollListener;
+import com.example.utils.Methods;
+import com.example.utils.SharedPref;
 import com.google.android.material.button.MaterialButton;
 
 import java.util.ArrayList;

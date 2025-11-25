@@ -1,4 +1,4 @@
-package blogtalk.com.socialmedia;
+package com.example.socialmedia;
 
 import static android.Manifest.permission.BLUETOOTH_CONNECT;
 import static android.Manifest.permission.READ_PHONE_STATE;
@@ -21,16 +21,16 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.app.NotificationManagerCompat;
 import androidx.core.content.ContextCompat;
 
-import blogtalk.com.apiservices.APIClient;
-import blogtalk.com.apiservices.APIInterface;
-import blogtalk.com.apiservices.RespGenerateChatToken;
-import blogtalk.com.chat.ChatHelper;
-import blogtalk.com.eventbus.EventCalling;
-import blogtalk.com.eventbus.GlobalBus;
-import blogtalk.com.items.ItemChatList;
-import blogtalk.com.utils.Constants;
-import blogtalk.com.utils.Methods;
-import blogtalk.com.utils.SharedPref;
+import com.example.apiservices.APIClient;
+import com.example.apiservices.APIInterface;
+import com.example.apiservices.RespGenerateChatToken;
+import com.example.chat.ChatHelper;
+import com.example.eventbus.EventCalling;
+import com.example.eventbus.GlobalBus;
+import com.example.items.ItemChatList;
+import com.example.utils.Constants;
+import com.example.utils.Methods;
+import com.example.utils.SharedPref;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.makeramen.roundedimageview.RoundedImageView;
 import com.squareup.picasso.Picasso;

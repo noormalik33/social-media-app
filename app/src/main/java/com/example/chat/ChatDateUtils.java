@@ -1,4 +1,4 @@
-package blogtalk.com.chat;
+package com.example.chat;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

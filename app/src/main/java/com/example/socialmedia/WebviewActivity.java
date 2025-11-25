@@ -1,4 +1,4 @@
-package blogtalk.com.socialmedia;
+package com.example.socialmedia;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,8 +10,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import blogtalk.com.items.ItemPage;
-import blogtalk.com.utils.Methods;
+import com.example.items.ItemPage;
+import com.example.utils.Methods;
 
 public class WebviewActivity extends AppCompatActivity {
 

@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace 'blogtalk.com'
+    namespace 'com.example.socialmedia'
     compileSdk 35
 
     defaultConfig {

@@ -1,4 +1,4 @@
-package blogtalk.com.socialmedia;
+package com.example.socialmedia;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,11 +9,11 @@ import android.os.Bundle;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.ImageView;
 
-import blogtalk.com.apiservices.APIClient;
-import blogtalk.com.apiservices.APIInterface;
-import blogtalk.com.apiservices.RespSuccess;
-import blogtalk.com.utils.Constants;
-import blogtalk.com.utils.Methods;
+import com.example.apiservices.APIClient;
+import com.example.apiservices.APIInterface;
+import com.example.apiservices.RespSuccess;
+import com.example.utils.Constants;
+import com.example.utils.Methods;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
 

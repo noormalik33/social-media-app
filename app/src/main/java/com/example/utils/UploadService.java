@@ -1,4 +1,4 @@
-package blogtalk.com.utils;
+package com.example.utils;
 
 import android.annotation.SuppressLint;
 import android.app.IntentService;
@@ -15,13 +15,13 @@ import androidx.annotation.Nullable;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 
-import blogtalk.com.apiservices.APIClient;
-import blogtalk.com.apiservices.APIInterface;
-import blogtalk.com.apiservices.RespSuccess;
-import blogtalk.com.eventbus.EventStoryUpload;
-import blogtalk.com.eventbus.GlobalBus;
-import blogtalk.com.socialmedia.MainActivity;
-import blogtalk.com.socialmedia.R;
+import com.example.apiservices.APIClient;
+import com.example.apiservices.APIInterface;
+import com.example.apiservices.RespSuccess;
+import com.example.eventbus.EventStoryUpload;
+import com.example.eventbus.GlobalBus;
+import com.example.socialmedia.MainActivity;
+import com.example.socialmedia.R;
 
 import org.apache.commons.io.FilenameUtils;
 

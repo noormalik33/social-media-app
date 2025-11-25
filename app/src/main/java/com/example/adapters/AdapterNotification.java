@@ -1,4 +1,4 @@
-package blogtalk.compackage blogtalk.com.adapters;
+package com.example.adapters;
 
 import android.content.Context;
 import android.content.Intent;
@@ -17,18 +17,18 @@ import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
-import blogtalk.com.apiservices.APIClient;
-import blogtalk.com.apiservices.APIInterface;
-import blogtalk.com.apiservices.RespPostDetails;
-import blogtalk.com.items.ItemNotification;
-import blogtalk.com.items.ItemUser;
-import blogtalk.com.socialmedia.PostDetailActivity;
-import blogtalk.com.socialmedia.ProfileActivity;
-import blogtalk.com.socialmedia.R;
-import blogtalk.com.socialmedia.TextPostDetailActivity;
-import blogtalk.com.utils.Constants;
-import blogtalk.com.utils.Methods;
-import blogtalk.com.utils.SharedPref;
+import com.example.apiservices.APIClient;
+import com.example.apiservices.APIInterface;
+import com.example.apiservices.RespPostDetails;
+import com.example.items.ItemNotification;
+import com.example.items.ItemUser;
+import com.example.socialmedia.PostDetailActivity;
+import com.example.socialmedia.ProfileActivity;
+import com.example.socialmedia.R;
+import com.example.socialmedia.TextPostDetailActivity;
+import com.example.utils.Constants;
+import com.example.utils.Methods;
+import com.example.utils.SharedPref;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;

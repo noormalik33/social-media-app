@@ -1,8 +1,8 @@
-package blogtalk.com.utils;
+package com.example.utils;
 
 import android.content.Context;
 
-import blogtalk.com.socialmedia.BuildConfig;
+import com.example.socialmedia.BuildConfig;
 import com.yakivmospan.scytale.Crypto;
 import com.yakivmospan.scytale.Options;
 import com.yakivmospan.scytale.Store;

@@ -1,4 +1,4 @@
-package blogtalk.com.utils;
+package com.example.utils;
 
 import android.annotation.SuppressLint;
 import android.content.ContentValues;
@@ -7,11 +7,11 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import blogtalk.com.items.ItemAbout;
-import blogtalk.com.items.ItemChatList;
-import blogtalk.com.items.ItemNotification;
-import blogtalk.com.items.ItemPost;
-import blogtalk.com.items.ItemStories;
+import com.example.items.ItemAbout;
+import com.example.items.ItemChatList;
+import com.example.items.ItemNotification;
+import com.example.items.ItemPost;
+import com.example.items.ItemStories;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

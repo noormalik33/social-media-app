@@ -1,4 +1,4 @@
-package blogtalk.compackage blogtalk.com.adapters;
+package com.example.adapters;
 
 import android.content.Context;
 import android.content.Intent;
@@ -11,14 +11,14 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import blogtalk.com.items.ItemStories;
-import blogtalk.com.socialmedia.R;
-import blogtalk.com.socialmedia.SelectStoryActivity;
-import blogtalk.com.socialmedia.StoryActivity;
-import blogtalk.com.utils.Constants;
-import blogtalk.com.utils.DBHelper;
-import blogtalk.com.utils.Methods;
-import blogtalk.com.utils.SharedPref;
+import com.example.items.ItemStories;
+import com.example.socialmedia.R;
+import com.example.socialmedia.SelectStoryActivity;
+import com.example.socialmedia.StoryActivity;
+import com.example.utils.Constants;
+import com.example.utils.DBHelper;
+import com.example.utils.Methods;
+import com.example.utils.SharedPref;
 import com.makeramen.roundedimageview.RoundedImageView;
 import com.squareup.picasso.Picasso;
 

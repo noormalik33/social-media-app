@@ -1,4 +1,4 @@
-package blogtalk.com.fragments;
+package com.example.fragments;
 
 import android.annotation.SuppressLint;
 import android.database.Cursor;
@@ -17,10 +17,10 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import blogtalk.com.adapters.AdapterDownloads;
-import blogtalk.com.socialmedia.R;
-import blogtalk.com.utils.BackgroundTask;
-import blogtalk.com.utils.Methods;
+import com.example.adapters.AdapterDownloads;
+import com.example.socialmedia.R;
+import com.example.utils.BackgroundTask;
+import com.example.utils.Methods;
 
 import org.apache.commons.io.FileUtils;
 

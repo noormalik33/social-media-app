@@ -1,4 +1,4 @@
-package blogtalk.compackage blogtalk.com.adapters;
+package com.example.adapters;
 
 import android.app.Activity;
 import android.content.Context;
@@ -15,10 +15,10 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager2.widget.ViewPager2;
 
-import blogtalk.com.socialmedia.CropImageActivity;
-import blogtalk.com.socialmedia.R;
-import blogtalk.com.utils.Constants;
-import blogtalk.com.utils.Methods;
+import com.example.socialmedia.CropImageActivity;
+import com.example.socialmedia.R;
+import com.example.utils.Constants;
+import com.example.utils.Methods;
 import com.naver.android.helloyako.imagecrop.view.ImageCropView;
 import com.squareup.picasso.Picasso;
 

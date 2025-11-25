@@ -1,4 +1,4 @@
-package blogtalk.com.utils;
+package com.example.utils;
 
 import android.app.Activity;
 import android.content.res.Configuration;
@@ -11,7 +11,7 @@ import android.view.WindowManager;
 
 import androidx.core.content.ContextCompat;
 
-import blogtalk.com.socialmedia.R;
+import com.example.socialmedia.R;
 
 public class StatusBarUtil {
     public static void setStatusBar(Activity activity) {

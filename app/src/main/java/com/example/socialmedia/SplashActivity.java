@@ -1,4 +1,4 @@
-package blogtalk.com.socialmedia;
+package com.example.socialmedia;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -14,16 +14,16 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import blogtalk.com.apiservices.APIClient;
-import blogtalk.com.apiservices.APIInterface;
-import blogtalk.com.apiservices.RespAppDetails;
-import blogtalk.com.apiservices.RespPostDetails;
-import blogtalk.com.chat.ChatHelper;
-import blogtalk.com.items.ItemUser;
-import blogtalk.com.utils.Constants;
-import blogtalk.com.utils.DBHelper;
-import blogtalk.com.utils.Methods;
-import blogtalk.com.utils.SharedPref;
+import com.example.apiservices.APIClient;
+import com.example.apiservices.APIInterface;
+import com.example.apiservices.RespAppDetails;
+import com.example.apiservices.RespPostDetails;
+import com.example.chat.ChatHelper;
+import com.example.items.ItemUser;
+import com.example.utils.Constants;
+import com.example.utils.DBHelper;
+import com.example.utils.Methods;
+import com.example.utils.SharedPref;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 

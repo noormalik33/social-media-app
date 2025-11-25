@@ -1,4 +1,4 @@
-package blogtalk.com.fragments;
+package com.example.fragments;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -14,20 +14,20 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
-import blogtalk.com.adapters.AdapterFollowRequest;
-import blogtalk.com.adapters.AdapterUserFollowers;
-import blogtalk.com.adapters.AdapterUserFollowing;
-import blogtalk.com.apiservices.APIClient;
-import blogtalk.com.apiservices.APIInterface;
-import blogtalk.com.apiservices.RespFollowUserList;
-import blogtalk.com.interfaces.ActionDoneListener;
-import blogtalk.com.items.ItemUser;
-import blogtalk.com.socialmedia.FollowRequestActivity;
-import blogtalk.com.socialmedia.R;
-import blogtalk.com.utils.Constants;
-import blogtalk.com.utils.EndlessRecyclerViewScrollListener;
-import blogtalk.com.utils.Methods;
-import blogtalk.com.utils.SharedPref;
+import com.example.adapters.AdapterFollowRequest;
+import com.example.adapters.AdapterUserFollowers;
+import com.example.adapters.AdapterUserFollowing;
+import com.example.apiservices.APIClient;
+import com.example.apiservices.APIInterface;
+import com.example.apiservices.RespFollowUserList;
+import com.example.interfaces.ActionDoneListener;
+import com.example.items.ItemUser;
+import com.example.socialmedia.FollowRequestActivity;
+import com.example.socialmedia.R;
+import com.example.utils.Constants;
+import com.example.utils.EndlessRecyclerViewScrollListener;
+import com.example.utils.Methods;
+import com.example.utils.SharedPref;
 
 import java.util.ArrayList;
 

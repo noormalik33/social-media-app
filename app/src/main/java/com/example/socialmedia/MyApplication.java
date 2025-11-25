@@ -1,4 +1,4 @@
-package blogtalk.com.socialmedia;
+package com.example.socialmedia;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -17,12 +17,12 @@ import androidx.media3.database.StandaloneDatabaseProvider;
 import androidx.media3.datasource.cache.LeastRecentlyUsedCacheEvictor;
 import androidx.media3.datasource.cache.SimpleCache;
 
-import blogtalk.com.chat.ChatHelper;
-import blogtalk.com.utils.Constants;
-import blogtalk.com.utils.DBHelper;
-import blogtalk.com.utils.Methods;
-import blogtalk.com.utils.SharedPref;
-import blogtalk.com.utils.StatusBarUtil;
+import com.example.chat.ChatHelper;
+import com.example.utils.Constants;
+import com.example.utils.DBHelper;
+import com.example.utils.Methods;
+import com.example.utils.SharedPref;
+import com.example.utils.StatusBarUtil;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.analytics.FirebaseAnalytics;
 import com.onesignal.OneSignal;

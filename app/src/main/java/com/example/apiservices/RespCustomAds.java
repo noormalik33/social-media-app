@@ -1,7 +1,7 @@
-package blogtalk.com.apiservices;
+package com.example.apiservices;
 
-import blogtalk.com.items.ItemCustomAds;
-import blogtalk.com.items.ItemPost;
+import com.example.items.ItemCustomAds;
+import com.example.items.ItemPost;
 import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;

@@ -1,4 +1,4 @@
-package blogtalk.com.socialmedia;
+package com.example.socialmedia;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -8,10 +8,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager2.widget.ViewPager2;
 
-import blogtalk.com.adapters.AdapterStoryPager;
-import blogtalk.com.interfaces.StoryListener;
-import blogtalk.com.items.ItemStories;
-import blogtalk.com.utils.Constants;
+import com.example.adapters.AdapterStoryPager;
+import com.example.interfaces.StoryListener;
+import com.example.items.ItemStories;
+import com.example.utils.Constants;
 
 import java.util.ArrayList;
 
