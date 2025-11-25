@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title=""
+        android:theme="@style/ToolbarTheme">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/iv_privacy_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:elevation="12dp"
+            android:padding="7dp"
+            android:src="@drawable/ic_back_demo"
+            android:layout_marginEnd="10dp"
+            app:riv_corner_radius="20dp"
+            app:riv_mutate_background="true"
+            android:contentDescription="@string/image"
+            android:background="?attr/selectableItemBackground" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/outfit_bold"
+            android:gravity="center"
+            android:text="@string/settings_privacy"
+            android:textColor="@color/text_dark" />
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="15sp"
+        android:layout_marginEnd="15sp" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_privacy_acc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:paddingStart="15sp"
+                android:paddingEnd="15sp" >
+
+                <ImageView
+                    android:id="@+id/iv1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_private_account"
+                    android:contentDescription="@string/image"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/outfit_medium"
+                    android:text="@string/account_privacy"
+                    android:textColor="@color/text_popup"
+                    android:textSize="16sp"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintEnd_toStartOf="@+id/switch_privacy_acc_pri"
+                    app:layout_constraintStart_toEndOf="@+id/iv1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_privacy_acc"/>
+
+                <TextView
+                    android:id="@+id/tv_privacy_acc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/outfit_regular"
+                    android:text="@string/your_account_is_public"
+                    android:textColor="@color/text_popup"
+                    android:textSize="12sp"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintEnd_toStartOf="@+id/switch_privacy_acc_pri"
+                    app:layout_constraintStart_toEndOf="@+id/iv1"
+                    app:layout_constraintTop_toBottomOf="@+id/tv1"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/switch_privacy_acc_pri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_privacy_change_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingStart="15sp"
+                android:paddingEnd="15sp"
+                android:background="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/iv2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_change_password"
+                    android:contentDescription="@string/image"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/change_password"
+                    android:textColor="@color/text_popup"
+                    android:textSize="16sp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/outfit_medium"
+                    app:layout_constraintStart_toEndOf="@+id/iv2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_next"
+                    android:padding="6dp"
+                    android:layout_marginEnd="5dp"
+                    android:contentDescription="@string/image"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_privacy_delete_acc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingStart="15sp"
+                android:paddingEnd="15sp"
+                android:background="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/iv3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_delete_acc"
+                    app:tint="@color/delete"
+                    android:contentDescription="@string/image"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delete_my_account"
+                    android:textColor="@color/delete"
+                    android:textSize="16sp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/outfit_medium"
+                    app:layout_constraintStart_toEndOf="@+id/iv3"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_next"
+                    android:padding="6dp"
+                    app:tint="@color/delete"
+                    android:layout_marginEnd="5dp"
+                    android:contentDescription="@string/image"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

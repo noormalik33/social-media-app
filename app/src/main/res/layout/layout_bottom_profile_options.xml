@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/view1"
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        app:riv_corner_radius="20dp"
+        android:background="@color/line_popup"
+        app:riv_mutate_background="true"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/iv1"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:src="@drawable/ic_next"
+        app:tint="@color/text_et_hint"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_edit_prof_share"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_edit_prof_share"/>
+
+    <TextView
+        android:id="@+id/tv_edit_prof_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/share_profile"
+        android:padding="15dp"
+        android:textSize="18sp"
+        android:paddingStart="25dp"
+        android:layout_marginTop="10dp"
+        android:background="?attr/selectableItemBackground"
+        android:fontFamily="@font/outfit_medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view1" />
+
+    <ImageView
+        android:id="@+id/iv2"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:src="@drawable/ic_next"
+        app:tint="@color/text_et_hint"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_edit_prof"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_edit_prof"/>
+
+    <TextView
+        android:id="@+id/tv_edit_prof"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_profile"
+        android:padding="15dp"
+        android:textSize="18sp"
+        android:paddingStart="25dp"
+        android:background="?attr/selectableItemBackground"
+        android:fontFamily="@font/outfit_medium"
+        app:layout_constraintTop_toBottomOf="@+id/tv_edit_prof_share"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/iv6"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:src="@drawable/ic_next"
+        app:tint="@color/text_et_hint"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_edit_verify"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_edit_verify"/>
+
+    <TextView
+        android:id="@+id/tv_edit_verify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/verify_account"
+        android:padding="15dp"
+        android:textSize="18sp"
+        android:paddingStart="25dp"
+        android:background="?attr/selectableItemBackground"
+        android:fontFamily="@font/outfit_medium"
+        app:layout_constraintTop_toBottomOf="@+id/tv_edit_prof"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/iv5"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:src="@drawable/ic_next"
+        app:tint="@color/text_et_hint"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_my_acc_sett_privacy"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_my_acc_sett_privacy"/>
+
+    <TextView
+        android:id="@+id/tv_my_acc_sett_privacy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_privacy"
+        android:padding="15dp"
+        android:textSize="18sp"
+        android:paddingStart="25dp"
+        android:background="?attr/selectableItemBackground"
+        android:fontFamily="@font/outfit_medium"
+        app:layout_constraintTop_toBottomOf="@+id/tv_edit_verify"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/iv3"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:src="@drawable/ic_next"
+        app:tint="@color/text_et_hint"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_my_downloads"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_my_downloads"/>
+
+    <TextView
+        android:id="@+id/tv_my_downloads"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/my_downloads"
+        android:padding="15dp"
+        android:textSize="18sp"
+        android:paddingStart="25dp"
+        android:background="?attr/selectableItemBackground"
+        android:fontFamily="@font/outfit_medium"
+        app:layout_constraintTop_toBottomOf="@+id/tv_my_acc_sett_privacy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/iv4"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:src="@drawable/ic_next"
+        app:tint="@color/text_et_hint"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_logout"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_logout"/>
+
+    <TextView
+        android:id="@+id/tv_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:fontFamily="@font/outfit_medium"
+        android:padding="15dp"
+        android:paddingStart="25dp"
+        android:text="@string/logout"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_my_downloads" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

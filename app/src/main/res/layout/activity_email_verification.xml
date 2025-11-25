@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="30dp">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:text="@string/verification_code"
+            android:textColor="@color/text_dark"
+            android:textSize="25sp"
+            android:fontFamily="@font/outfit_bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_verification"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv1"
+            app:layout_constraintBottom_toTopOf="@+id/tv2"/>
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/primary"
+            android:text="@string/enter_verification_code"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/outfit_medium"
+            android:background="@drawable/bg_round_primary_40"
+            app:layout_constraintTop_toBottomOf="@+id/iv1"
+            app:layout_constraintBottom_toTopOf="@+id/tv3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/otp_sent_email"
+            android:textColor="@color/text_et_login_bb"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/outfit_regular"
+            app:layout_constraintTop_toBottomOf="@+id/tv2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/pinView"/>
+
+        <com.chaos.view.PinView
+            android:id="@+id/pinView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="20sp"
+            android:textColor="@color/text_et_login"
+            android:layout_marginTop="60dp"
+            app:lineColor="@color/et_border_stroke"
+            android:cursorVisible="true"
+            app:itemCount="6"
+            app:itemSpacing="8dp"
+            app:itemRadius="10dp"
+            android:fontFamily="@font/outfit_bold"
+            android:itemBackground="@color/bg_icon_toolbar"
+            android:lineSpacingExtra="8dp"
+            style="@style/PinWidget.PinView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv3"
+            app:layout_constraintBottom_toTopOf="@+id/button_verify"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_verify"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:text="@string/verify"
+            android:textColor="@color/white"
+            app:cornerRadius="8dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:enabled="false"
+            android:fontFamily="@font/outfit_bold"
+            app:backgroundTint="@color/btn_disable"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button_verify_close"
+            app:layout_constraintBottom_toTopOf="@+id/tv4"
+            app:layout_constraintTop_toBottomOf="@+id/pinView" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_verify_close"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:text="@string/close"
+            android:textColor="@color/white"
+            app:cornerRadius="8dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/outfit_bold"
+            app:backgroundTint="@color/button_re_register"
+            app:layout_constraintStart_toEndOf="@+id/button_verify"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/button_verify"
+            app:layout_constraintTop_toTopOf="@+id/button_verify" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not Received OTP?"
+            android:textColor="@color/text_et_login_bb"
+            android:fontFamily="@font/outfit_medium"
+            android:layout_marginTop="40dp"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_verify_resend"
+            app:layout_constraintTop_toBottomOf="@+id/button_verify"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_verify_resend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/resend"
+            android:textSize="16sp"
+            android:textColor="@color/primary"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/outfit_bold"
+            app:layout_constraintStart_toEndOf="@+id/tv4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv4"
+            app:layout_constraintBottom_toBottomOf="@+id/tv4"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

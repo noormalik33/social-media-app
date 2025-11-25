@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".PostDetailActivity"
+    android:fitsSystemWindows="true" >
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        android:theme="@style/ToolbarTheme">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/iv_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:elevation="12dp"
+            android:padding="7dp"
+            android:src="@drawable/ic_back_demo"
+            android:layout_marginEnd="10dp"
+            app:riv_corner_radius="20dp"
+            app:riv_mutate_background="true"
+            android:contentDescription="@string/image"
+            android:background="?attr/selectableItemBackground" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/text_dark" />
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/iv_status_prof"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            app:riv_corner_radius="25dp" />
+
+        <TextView
+            android:id="@+id/tv_status_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/outfit_bold"
+            android:maxLines="1"
+            android:textColor="@color/text_bb"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintBottom_toTopOf="@+id/tv_status_date"
+            app:layout_constraintEnd_toStartOf="@+id/iv_prof_account_verify"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toEndOf="@+id/iv_status_prof"
+            app:layout_constraintTop_toTopOf="@+id/iv_status_prof"
+            tools:text="User Name" />
+
+        <ImageView
+            android:id="@+id/iv_prof_account_verify"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/verify_account"
+            android:padding="4dp"
+            android:src="@drawable/ic_verified"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_status_user_name"
+            app:layout_constraintEnd_toStartOf="@+id/btn_status_follow"
+            app:layout_constraintStart_toEndOf="@+id/tv_status_user_name"
+            app:layout_constraintTop_toTopOf="@+id/tv_status_user_name" />
+
+        <TextView
+            android:id="@+id/tv_status_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:fontFamily="@font/outfit_medium"
+            android:textColor="@color/text_popup_90"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_status_prof"
+            app:layout_constraintStart_toEndOf="@+id/iv_status_prof"
+            app:layout_constraintTop_toBottomOf="@+id/tv_status_user_name"
+            tools:text="01/01/1990" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_status_follow"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/outfit_bold"
+            android:minWidth="0dp"
+            android:text="@string/follow"
+            android:textColor="@color/text_dark"
+            android:textSize="10sp"
+            app:backgroundTint="@color/bg_icon_more"
+            app:cornerRadius="6dp"
+            app:layout_constraintEnd_toStartOf="@+id/iv_status_more"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/iv_status_more"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_more_round"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_status_prof"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/iv_status_prof"
+            app:riv_corner_radius="25dp" />
+
+        <com.webtoonscorp.android.readmore.ReadMoreTextView
+            android:id="@+id/tv_status_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/outfit_medium"
+            android:textColor="?colorOnSurface"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_status_date"
+            app:readMoreMaxLines="5"
+            app:readLessText="@string/see_less"
+            app:readMoreText="@string/see_more"
+            app:readMoreTextColor="@color/text_see_more"
+            app:readMoreTextStyle="bold"
+            app:readMoreToggleArea="all"
+            app:readMoreTextSize="12sp"
+            app:readLessTextSize="12sp" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="tv_status_text" />
+
+        <ImageView
+            android:id="@+id/iv_status_like"
+            android:layout_width="28dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:padding="2dp"
+            android:src="@drawable/ic_like"
+            app:layout_constraintEnd_toEndOf="@+id/tv_status_likes"
+            app:layout_constraintStart_toStartOf="@+id/tv_status_likes"
+            app:layout_constraintTop_toBottomOf="@+id/barrier1"
+            app:tint="@color/ic_tint_post" />
+
+        <TextView
+            android:id="@+id/tv_status_likes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/outfit_bold"
+            android:gravity="center"
+            android:minWidth="25dp"
+            tools:text="10k"
+            android:textColor="@color/text_bb"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_status_like" />
+
+        <ImageView
+            android:id="@+id/iv_status_comment"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:padding="3dp"
+            android:src="@drawable/ic_comment"
+            android:contentDescription="@string/comments"
+            app:layout_constraintEnd_toEndOf="@+id/tv_status_comment"
+            app:layout_constraintStart_toStartOf="@+id/tv_status_comment"
+            app:layout_constraintTop_toBottomOf="@+id/barrier1"
+            app:tint="@color/ic_tint_post" />
+
+        <TextView
+            android:id="@+id/tv_status_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:fontFamily="@font/outfit_bold"
+            android:gravity="center"
+            android:minWidth="25dp"
+            tools:text="100k"
+            android:textColor="@color/text_bb"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/tv_status_likes"
+            app:layout_constraintTop_toBottomOf="@+id/iv_status_comment" />
+
+        <ImageView
+            android:id="@+id/iv_status_share"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:padding="4dp"
+            android:src="@drawable/ic_share"
+            android:contentDescription="@string/share"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_status_comment"
+            app:layout_constraintStart_toEndOf="@+id/tv_status_comment"
+            app:layout_constraintTop_toBottomOf="@+id/barrier1"
+            app:tint="@color/ic_tint_post" />
+
+        <ImageView
+            android:id="@+id/iv_status_fav"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="10dp"
+            android:padding="4dp"
+            android:src="@drawable/ic_fav"
+            android:contentDescription="@string/favourite"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_status_comment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/barrier1"
+            app:tint="@color/ic_tint_post" />
+
+        <com.webtoonscorp.android.readmore.ReadMoreTextView
+            android:id="@+id/tv_status_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/outfit_medium"
+            android:textSize="12sp"
+            app:readMoreMaxLines="2"
+            app:readLessText="@string/see_less"
+            app:readMoreText="@string/see_more"
+            app:readMoreTextColor="@color/text_see_more"
+            app:readMoreTextStyle="bold"
+            app:readMoreToggleArea="all"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_status_likes"
+            app:readMoreTextSize="12sp"
+            app:readLessTextSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_adView"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,18 @@
+package com.example.eventbus;
+
+import com.example.items.ItemPost;
+
+import java.io.Serializable;
+
+public class EventUpdatePost implements Serializable{
+
+	ItemPost itemPost;
+
+	public EventUpdatePost(ItemPost itemPost) {
+		this.itemPost = itemPost;
+	}
+
+	public ItemPost getItemPost() {
+		return itemPost;
+	}
+}

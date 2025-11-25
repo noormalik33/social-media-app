@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/bg_detail">
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vp_image_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"/>
+
+    <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+        android:id="@+id/dots_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        app:dotsColor="@color/dot_unselected"
+        app:dotsCornerRadius="6dp"
+        app:dotsSize="6dp"
+        app:dotsSpacing="3dp"
+        app:dotsWidthFactor="2"
+        app:progressMode="true"
+        app:selectedDotColor="@color/dot_selected"
+        app:layout_constraintStart_toStartOf="@+id/vp_image_details"
+        app:layout_constraintEnd_toEndOf="@+id/vp_image_details"
+        app:layout_constraintBottom_toBottomOf="@+id/vp_image_details"
+        android:visibility="gone"/>
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/iv_status_prof"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="centerCrop"
+        android:src="@color/primary"
+        app:layout_constraintBottom_toTopOf="@+id/nsv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:riv_corner_radius="25dp" />
+
+    <TextView
+        android:id="@+id/tv_status_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="@color/white"
+        android:fontFamily="@font/outfit_bold"
+        android:layout_marginStart="8dp"
+        app:layout_constrainedWidth="true"
+        tools:text="User Name"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_status_prof"
+        app:layout_constraintStart_toEndOf="@+id/iv_status_prof"
+        app:layout_constraintTop_toTopOf="@+id/iv_status_prof"
+        app:layout_constraintEnd_toStartOf="@+id/iv_prof_account_verify"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <ImageView
+        android:id="@+id/iv_prof_account_verify"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:contentDescription="@string/verify_account"
+        android:padding="4dp"
+        android:src="@drawable/ic_verified"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_status_user_name"
+        app:layout_constraintEnd_toStartOf="@+id/btn_status_follow"
+        app:layout_constraintStart_toEndOf="@+id/tv_status_user_name"
+        app:layout_constraintTop_toTopOf="@+id/tv_status_user_name"
+        android:visibility="gone"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_status_follow"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/follow"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:cornerRadius="10dp"
+        android:fontFamily="@font/outfit_bold"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_status_prof"
+        app:layout_constraintStart_toEndOf="@+id/iv_prof_account_verify"
+        app:layout_constraintTop_toTopOf="@id/iv_status_prof"
+        app:layout_constraintEnd_toStartOf="@+id/ll1"
+        app:strokeColor="@color/white" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nsv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ll1"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/ll_post_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.webtoonscorp.android.readmore.ReadMoreTextView
+                android:id="@+id/tv_details_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/outfit_medium"
+                app:readMoreMaxLines="2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_status_date"
+                app:readLessText="@string/see_less"
+                app:readMoreText="@string/see_more"
+                app:readMoreTextColor="@color/text_see_more"
+                app:readMoreTextStyle="bold"
+                app:readMoreToggleArea="all"
+                app:readMoreTextSize="12sp"
+                app:readLessTextSize="12sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_details_tags"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="25dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_detail_like"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="6dp"
+            app:tint="@color/white"
+            android:src="@drawable/ic_like"  />
+
+        <TextView
+            android:id="@+id/tv_detail_total_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="12 K"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:fontFamily="@font/outfit_bold"/>
+
+        <ImageView
+            android:id="@+id/iv_detail_views"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_view"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_detail_total_views"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="12 K"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:fontFamily="@font/outfit_bold" />
+
+        <ImageView
+            android:id="@+id/iv_detail_comment"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_comment"
+            app:tint="@color/white"  />
+
+        <TextView
+            android:id="@+id/tv_detail_total_comments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="12 K"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:fontFamily="@font/outfit_bold" />
+
+        <ImageView
+            android:id="@+id/iv_detail_share"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_share"
+            app:tint="@color/white"  />
+
+        <ImageView
+            android:id="@+id/iv_detail_more"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_more"
+            app:tint="@color/white" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pb_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

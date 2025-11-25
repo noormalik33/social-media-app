@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/bg_bottom_comments">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/view1"
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        app:riv_corner_radius="20dp"
+        android:background="@color/line_popup"
+        app:riv_mutate_background="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/report"
+        android:textSize="16sp"
+        android:textColor="@color/text_dark"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/outfit_bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view1"/>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/line_popup"
+        app:layout_constraintTop_toBottomOf="@+id/tv1" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        app:boxBackgroundColor="@color/bg_edittext"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:hintEnabled="false"
+        style="@style/TextInputLayoutStyle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_report"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:maxLines="5"
+            android:minLines="5"
+            android:padding="15dp"
+            android:textColor="@color/text_et_login"
+            android:textSize="16sp"
+            android:gravity="top"
+            android:hint="@string/your_report_message"
+            android:textColorHint="@color/text_et_hint"
+            android:background="@null"
+            android:fontFamily="@font/outfit_medium" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_report_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:fontFamily="@font/outfit_bold"
+        app:backgroundTint="@color/button_bg"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til_report" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

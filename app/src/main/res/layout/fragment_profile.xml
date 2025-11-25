@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_prof"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/htab_appbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent">
+
+                <com.google.android.material.appbar.CollapsingToolbarLayout
+                    android:id="@+id/htab_collapse_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/cv_prof"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            app:cardCornerRadius="65dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <com.makeramen.roundedimageview.RoundedImageView
+                                android:id="@+id/iv_prof"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_margin="3dp"
+                                android:scaleType="centerCrop"
+                                app:riv_corner_radius="60dp" />
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <TextView
+                            android:id="@+id/tv_prof_total_post"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/outfit_bold"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:text="0"
+                            android:textColor="@color/text_dark"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toTopOf="@+id/tv1"
+                            app:layout_constraintEnd_toEndOf="@+id/tv1"
+                            app:layout_constraintStart_toStartOf="@+id/tv1"
+                            app:layout_constraintTop_toTopOf="@+id/cv_prof"
+                            app:layout_constraintVertical_chainStyle="packed" />
+
+                        <TextView
+                            android:id="@+id/tv1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/bg_round_grey"
+                            android:fontFamily="@font/outfit_medium"
+                            android:paddingStart="15dp"
+                            android:paddingTop="5dp"
+                            android:paddingEnd="15dp"
+                            android:paddingBottom="5dp"
+                            android:text="@string/posts"
+                            android:textColor="@color/text_bb"
+                            android:textSize="10sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/cv_prof"
+                            app:layout_constraintEnd_toStartOf="@+id/view1"
+                            app:layout_constraintHorizontal_chainStyle="packed"
+                            app:layout_constraintStart_toEndOf="@+id/cv_prof"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_prof_total_post" />
+
+                        <View
+                            android:id="@+id/view1"
+                            android:layout_width="0.5dp"
+                            android:layout_height="0dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@color/line_language"
+                            app:layout_constraintBottom_toBottomOf="@+id/tv1"
+                            app:layout_constraintEnd_toStartOf="@+id/tv_followers"
+                            app:layout_constraintStart_toEndOf="@+id/tv1"
+                            app:layout_constraintTop_toTopOf="@+id/tv_prof_total_post" />
+
+                        <TextView
+                            android:id="@+id/tv_prof_total_followers"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/outfit_bold"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:text="0"
+                            android:textColor="@color/text_dark"
+                            android:textSize="14sp"
+                            app:layout_constraintEnd_toEndOf="@+id/tv_followers"
+                            app:layout_constraintStart_toStartOf="@+id/tv_followers"
+                            app:layout_constraintTop_toTopOf="@+id/tv_prof_total_post" />
+
+                        <TextView
+                            android:id="@+id/tv_followers"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/bg_round_grey"
+                            android:fontFamily="@font/outfit_medium"
+                            android:paddingStart="15dp"
+                            android:paddingTop="5dp"
+                            android:paddingEnd="15dp"
+                            android:paddingBottom="5dp"
+                            android:text="@string/followers"
+                            android:textColor="@color/text_bb"
+                            android:textSize="10sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/tv1"
+                            app:layout_constraintEnd_toStartOf="@+id/view2"
+                            app:layout_constraintStart_toEndOf="@+id/view1"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_prof_total_followers" />
+
+                        <View
+                            android:id="@+id/view2"
+                            android:layout_width="0.5dp"
+                            android:layout_height="0dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@color/line_language"
+                            app:layout_constraintBottom_toBottomOf="@+id/tv_followers"
+                            app:layout_constraintEnd_toStartOf="@+id/tv_following"
+                            app:layout_constraintStart_toEndOf="@+id/tv_followers"
+                            app:layout_constraintTop_toTopOf="@+id/tv_prof_total_followers" />
+
+                        <TextView
+                            android:id="@+id/tv_prof_total_following"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/outfit_bold"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:text="0"
+                            android:textColor="@color/text_dark"
+                            android:textSize="14sp"
+                            app:layout_constraintEnd_toEndOf="@+id/tv_following"
+                            app:layout_constraintStart_toStartOf="@+id/tv_following"
+                            app:layout_constraintTop_toTopOf="@+id/tv_prof_total_post" />
+
+                        <TextView
+                            android:id="@+id/tv_following"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/bg_round_grey"
+                            android:fontFamily="@font/outfit_medium"
+                            android:paddingStart="15dp"
+                            android:paddingTop="5dp"
+                            android:paddingEnd="15dp"
+                            android:paddingBottom="5dp"
+                            android:text="@string/following"
+                            android:textColor="@color/text_bb"
+                            android:textSize="10sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/tv1"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/view2"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_prof_total_following" />
+
+                        <TextView
+                            android:id="@+id/tv_prof_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="10dp"
+                            android:fontFamily="@font/outfit_bold"
+                            android:textColor="@color/text_dark"
+                            android:textSize="16sp"
+                            app:layout_constraintEnd_toStartOf="@+id/btn_prof_follow"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/cv_prof"
+                            tools:text="John Snow" />
+
+                        <TextView
+                            android:id="@+id/tv_prof_sub"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="10dp"
+                            android:fontFamily="@font/outfit_medium"
+                            android:textColor="@color/text_bb"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_prof_name"
+                            tools:text="aa@gmail.com" />
+
+                        <ImageView
+                            android:id="@+id/iv_prof_email_verify"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_marginStart="2dp"
+                            android:padding="3dp"
+                            android:src="@drawable/ic_warning"
+                            android:visibility="gone"
+                            app:layout_constraintBottom_toBottomOf="@+id/tv_prof_sub"
+                            app:layout_constraintStart_toEndOf="@+id/tv_prof_sub"
+                            app:layout_constraintTop_toTopOf="@+id/tv_prof_sub" />
+
+                        <com.hasankucuk.socialtextview.SocialTextView
+                            android:id="@+id/tv_prof_bio"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text=""
+                            android:layout_marginStart="15dp"
+                            android:fontFamily="@font/outfit_medium"
+                            app:emailColor="@color/bio_email"
+                            app:hashtagColor="@color/bio_hashtag"
+                            app:linkType="hashtag|email|url"
+                            app:normalTextColor="@color/bio_text"
+                            app:urlColor="@color/bio_url"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_prof_sub" />
+
+                        <ImageView
+                            android:id="@+id/iv1"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="15dp"
+                            android:padding="2dp"
+                            android:src="@drawable/ic_link"
+                            app:tint="@color/ic_toolbar"
+                            android:contentDescription="@string/image"
+                            app:layout_constraintBottom_toBottomOf="@+id/tv_prof_links"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/tv_prof_links"
+                            android:visibility="gone"/>
+
+                        <TextView
+                            android:id="@+id/tv_prof_links"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:background="?attr/selectableItemBackground"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/outfit_bold"
+                            android:maxLines="1"
+                            android:singleLine="false"
+                            android:textColor="@color/text_dark"
+                            android:textSize="13sp"
+                            app:layout_constrainedWidth="true"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintHorizontal_chainStyle="packed"
+                            app:layout_constraintEnd_toStartOf="@+id/tv_prof_links_more"
+                            app:layout_constraintStart_toEndOf="@+id/iv1"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_prof_bio"
+                            tools:text="https://google.com" />
+
+                        <TextView
+                            android:id="@+id/tv_prof_links_more"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:background="?attr/selectableItemBackground"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/outfit_bold"
+                            android:maxLines="2"
+                            android:singleLine="false"
+                            android:textColor="@color/text_dark"
+                            android:textSize="13sp"
+                            app:layout_constrainedWidth="true"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/tv_prof_links"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_prof_bio"
+                            tools:text="3 more" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn_prof_follow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="15dp"
+                            android:padding="3dp"
+                            android:src="@drawable/ic_warning"
+                            android:visibility="gone"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/tv_prof_name" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn_prof_points"
+                            android:layout_width="wrap_content"
+                            android:layout_height="45dp"
+                            android:text="@string/my_points"
+                            android:textAllCaps="false"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="5dp"
+                            app:backgroundTint="@color/points"
+                            app:cornerRadius="25dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_prof_links"
+                            android:visibility="gone"/>
+
+                        <TextView
+                            android:id="@+id/tv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/sora_medium_500"
+                            android:text="@string/profile_completion"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/btn_prof_points" />
+
+                        <TextView
+                            android:id="@+id/tv_prof_edit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:fontFamily="@font/sora_bold_700"
+                            android:text="@string/edit"
+                            android:textColor="@color/primary"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/tv2"
+                            app:layout_constraintStart_toEndOf="@+id/tv2"
+                            app:layout_constraintTop_toTopOf="@+id/tv2" />
+
+                        <TextView
+                            android:id="@+id/tv_prof_completed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="20dp"
+                            android:fontFamily="@font/sora_bold_700"
+                            android:textColor="@color/text_popup"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/tv2"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/tv2"
+                            tools:text="70%" />
+
+                        <SeekBar
+                            android:id="@+id/sb_prof_completion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="10dp"
+                            android:max="100"
+                            android:progressDrawable="@drawable/seekbar_progress"
+                            android:thumb="@color/primary"
+                            app:layout_constraintTop_toBottomOf="@+id/tv2"
+                            tools:progress="60" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bg_tab"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tabIconTint="@color/tablayout_icon"
+                    app:tabIndicator="@drawable/bg_tab_indicator"
+                    app:tabIndicatorColor="@color/primary" />
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/container"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tabs" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <fr.castorflex.android.circularprogressbar.CircularProgressBar
+        android:id="@+id/pb_prof"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:indeterminate="true"
+        app:cpb_color="#FFee44"
+        app:cpb_colors="@array/pocket_bar_colors"
+        app:cpb_max_sweep_angle="300"
+        app:cpb_min_sweep_angle="10"
+        app:cpb_rotation_speed="1.0"
+        app:cpb_stroke_width="4dp"
+        app:cpb_sweep_speed="1.0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

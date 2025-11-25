@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:layout_marginBottom="7dp"
+    android:background="@drawable/bg_border_comment">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/iv_comments_user"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@color/primary_40"
+        app:riv_corner_radius="50dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_comments_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Name"
+        android:textColor="@color/text_dark"
+        android:textSize="12sp"
+        android:maxLines="1"
+        android:layout_marginStart="15dp"
+        android:fontFamily="@font/outfit_bold"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/iv_comments_account_verify"
+        app:layout_constraintStart_toEndOf="@+id/iv_comments_user"
+        app:layout_constraintBottom_toTopOf="@+id/tv_comments_date"/>
+
+    <ImageView
+        android:id="@+id/iv_comments_account_verify"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/verify_account"
+        android:padding="3dp"
+        android:src="@drawable/ic_verified"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_comments_username"
+        app:layout_constraintEnd_toStartOf="@+id/iv_comments_more"
+        app:layout_constraintStart_toEndOf="@+id/tv_comments_username"
+        app:layout_constraintTop_toTopOf="@+id/tv_comments_username" />
+
+    <TextView
+        android:id="@+id/tv_comments_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2 days ago"
+        android:textSize="10sp"
+        android:maxLines="1"
+        android:textColor="@color/text_90"
+        android:fontFamily="@font/outfit_regular"
+        android:layout_marginStart="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_comments_username"
+        app:layout_constraintStart_toEndOf="@+id/iv_comments_user"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_comments_user"/>
+
+    <ImageView
+        android:id="@+id/iv_comments_more"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_more"
+        app:riv_corner_radius="50dp"
+        android:padding="6dp"
+        app:tint="@color/primary"
+        app:layout_constraintTop_toTopOf="@+id/iv_comments_user"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_comments_user"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_comments_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="2 days ago"
+        android:textSize="12sp"
+        android:textColor="@color/text_90"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="@font/outfit_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_comments_user"
+        app:layout_constraintStart_toStartOf="@+id/tv_comments_username" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

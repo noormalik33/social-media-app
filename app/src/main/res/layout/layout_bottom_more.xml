@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    android:paddingBottom="15dp"
+    android:background="@drawable/bg_bottom_comments">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/view1"
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        app:riv_corner_radius="20dp"
+        android:background="@color/line_popup"
+        app:riv_mutate_background="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/more_options"
+        android:textSize="17sp"
+        android:textColor="@color/text_dark"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/outfit_bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view1"/>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/line_popup"
+        app:layout_constraintTop_toBottomOf="@+id/tv1" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:id="@+id/ll_more_fav"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/iv_more_fav"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_fav_circle"
+                app:riv_corner_radius="35dp"
+                app:tint="@color/ic_toolbar"/>
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/favourite"
+                android:layout_marginTop="10dp"
+                android:textSize="11sp"
+                android:fontFamily="@font/outfit_medium"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_more_download"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_more_download"
+                app:riv_corner_radius="35dp"
+                app:tint="@color/ic_toolbar"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/download"
+                android:layout_marginTop="10dp"
+                android:textSize="11sp"
+                android:fontFamily="@font/outfit_medium"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_more_copy"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_more_copy"
+                app:riv_corner_radius="35dp"
+                app:tint="@color/ic_toolbar"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/copy"
+                android:layout_marginTop="10dp"
+                android:textSize="11sp"
+                android:fontFamily="@font/outfit_medium"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_more_report"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_more_report"
+                app:riv_corner_radius="35dp"
+                app:tint="@color/ic_toolbar"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/report"
+                android:layout_marginTop="10dp"
+                android:textSize="11sp"
+                android:fontFamily="@font/outfit_medium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_more_edit"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_edit_round"
+                app:riv_corner_radius="35dp"
+                app:tint="@color/ic_toolbar" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edit"
+                android:layout_marginTop="10dp"
+                android:textSize="11sp"
+                android:fontFamily="@font/outfit_medium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_more_delete"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_more_delete"
+                app:riv_corner_radius="35dp"
+                app:tint="@color/ic_toolbar"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/delete"
+                android:layout_marginTop="10dp"
+                android:textSize="11sp"
+                android:fontFamily="@font/outfit_medium"  />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

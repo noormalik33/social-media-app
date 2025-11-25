@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <color name="colorPrimary">#FF9E01</color>
+    <color name="colorPrimaryDark">#FF9E01</color>
+    <color name="colorAccent">#FF9E01</color>
+
+    <color name="primary">#FF9E01</color>
+    <color name="primary_40">#40FF9E01</color>
+
+    <color name="bg">#f6f6f6</color>
+    <color name="bg_detail">#000000</color>
+
+    <color name="button_re_register">#3F3D56</color>
+    <color name="button_bg">#FF9E01</color>
+    <color name="bg_card">#FFFFFF</color>
+    <color name="bg_about">#FFFFFF</color>
+    <color name="bg_grey">#2565637B</color>
+    <color name="bg_view">#903F3D56</color>
+    <color name="bg_tab">#153F3D56</color>
+    <color name="bg_profile_small">#FFFFFF</color>
+    <color name="bg_delete_acc_text">#203F3D56</color>
+    <color name="bg_delete_acc_text_total">#3065637B</color>
+    <color name="bg_delete_acc_box_border">#E4E7E6</color>
+    <color name="bg_delete_acc_box">#FEFEFE</color>
+    <color name="bg_delete_acc_box_sub">#2065637B</color>
+    <color name="bg_icon_toolbar">#FFFFFF</color>
+    <color name="bg_edittext">#FFFFFF</color>
+    <color name="ic_toolbar">#65637B</color>
+    <color name="bg_icon_more">#D9D9D9</color>
+    <color name="bg_icon_back">#CCFFFFFF</color>
+    <color name="ic_more">#3F3D56</color>
+    <color name="ic_tint_post">#3F3D56</color>
+    <color name="bg_date">#90D9D9D9</color>
+    <color name="bg_bottomsheet">#FFFFFF</color>
+    <color name="bg_bottom_nav">#F6F9FF</color>
+    <color name="bg_tags">#30CCCCCC</color>
+    <color name="bg_edittext_chat">#353666</color>
+    <color name="bg_chat_receive">#E5E5E5</color>
+    <color name="bg_chat_sent">#353666</color>
+    <color name="bg_story_unseen">#FF9E01</color>
+    <color name="bg_story_seen">#d3d3d3</color>
+
+    <color name="bg_tab_upload">#E52A2A2D</color>
+    <color name="bg_text_post">#ededed</color>
+
+    <color name="button_unselected">#353F3D56</color>
+    <color name="button_follow_stroke">#903F3D56</color>
+    <color name="button_decline">#B5B5B6</color>
+
+    <color name="bg_color_language">#FFFFFF</color>
+
+    <color name="text">#3F3D56</color>
+    <color name="text_dark">#3F3D56</color>
+    <color name="text_medium">#4E4B66</color>
+    <color name="text_bb">#BB3F3D56</color>
+    <color name="text_90">#903F3D56</color>
+    <color name="text_et_login">#4E4B66</color>
+    <color name="text_et_login_bb">#BB4E4B66</color>
+    <color name="text_et_hint">#AA636274</color>
+    <color name="text_popup">#65637B</color>
+    <color name="text_popup_90">#9065637B</color>
+    <color name="text_intro_sub">#AAE6E6E6</color>
+    <color name="text_see_more">#FF9E01</color>
+
+    <color name="et_border_stroke">#E4E7E6</color>
+    <color name="ic_bottom_nav">#626262</color>
+
+    <color name="btn_cancel">#3F3D56</color>
+    <color name="btn_disable">#9D9D9D</color>
+
+    <color name="check_box_bg_login">#FFFFFF</color>
+    <color name="check_box_check_bg_login">#FF9E01</color>
+    <color name="check_box_tick_login">#FFFFFF</color>
+    <color name="check_box_circle_login">#878EA1</color>
+
+    <color name="negative_button">#00f</color>
+    <color name="positive_button">#f00</color>
+
+    <color name="dot_selected">#FF9E01</color>
+    <color name="dot_unselected">#969696</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="line_language">#303F3D56</color>
+    <color name="line_popup">#70D9D9D9</color>
+    <color name="line">#70D9D9D9</color>
+    <color name="line_comment">#204E4B66</color>
+    <color name="border_popup">#3065637B</color>
+
+    <color name="bio_text">#4E4B66</color>
+    <color name="bio_url">#5454FF</color>
+    <color name="bio_hashtag">#000000</color>
+    <color name="bio_phone">#000000</color>
+    <color name="bio_email">#000000</color>
+
+    <integer-array name="pocket_bar_colors">
+        <item>@color/gplus_color_1</item>
+        <item>@color/gplus_color_2</item>
+        <item>@color/gplus_color_3</item>
+        <item>@color/gplus_color_4</item>
+    </integer-array>
+
+    <color name="gplus_color_1">#3e802f</color>
+    <color name="gplus_color_2">#f4b400</color>
+    <color name="gplus_color_3">#427fed</color>
+    <color name="gplus_color_4">#b23424</color>
+    <color name="whiteAA">#AAFFFFFF</color>
+    <color name="bg_pro_pic">#e2dcdc</color>
+    <color name="social_fb">#3b5999</color>
+    <color name="social_ggle">#ea4235</color>
+    <color name="red">#ff0000</color>
+    <color name="delete">#e55a54</color>
+
+
+    <color name="progress_primary">@color/white</color>
+    <color name="progress_secondary">@color/gray_scale</color>
+    <color name="progress_max_active">@color/white</color>
+
+    <color name="gray_scale">#8affffff</color>
+    <color name="points">#46ac56</color>
+    <color name="bg_points">#3046ac56</color>
+    <color name="bg_et_points">#1A3F3D56</color>
+    <color name="border_et_points">#263F3D56</color>
+    <color name="pending">#F29339</color>
+    <color name="bg_speaker_off">#b9b9b9</color>
+
+
+</resources>

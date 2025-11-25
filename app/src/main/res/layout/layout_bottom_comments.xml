@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="15dp"
+    android:background="@drawable/bg_bottom_comments">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/view1"
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        app:riv_corner_radius="20dp"
+        android:background="@color/line_popup"
+        app:riv_mutate_background="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/comments"
+        android:textSize="15sp"
+        android:textColor="@color/text_dark"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/outfit_bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view1"/>
+
+    <TextView
+        android:id="@+id/tv_comments_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="14sp"
+        android:textColor="@color/primary"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/outfit_bold"
+        app:layout_constraintStart_toEndOf="@+id/tv1"
+        app:layout_constraintTop_toTopOf="@+id/tv1"
+        app:layout_constraintBottom_toBottomOf="@+id/tv1"/>
+
+    <LinearLayout
+        android:id="@+id/ll_comment_likes"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:background="?attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_comments_total"
+        app:layout_constraintTop_toTopOf="@+id/tv_comments_total"
+        app:layout_constraintStart_toEndOf="@+id/tv_comments_total"
+        app:layout_constraintEnd_toStartOf="@+id/iv_comments_close">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:src="@drawable/ic_like_hover"
+            android:contentDescription="@string/image"/>
+
+        <TextView
+            android:id="@+id/tv_comment_total_likes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_dark"
+            tools:text="20"
+            android:fontFamily="@font/outfit_medium"
+            android:layout_marginStart="3dp"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="-7dp"
+            android:src="@drawable/ic_arrow"
+            app:tint="@color/ic_toolbar"
+            android:contentDescription="@string/next"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_comments_close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_close"
+        android:padding="5dp"
+        app:tint="@color/primary"
+        android:contentDescription="@string/close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv1"
+        app:layout_constraintBottom_toBottomOf="@+id/tv1"/>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/line_popup"
+        app:layout_constraintTop_toBottomOf="@+id/tv1" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/ic_comments_user"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@color/primary_40"
+        app:riv_corner_radius="35dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_email"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:hintEnabled="false"
+        app:boxBackgroundColor="@color/bg_edittext"
+        style="@style/TextInputLayoutStyle"
+        android:layout_marginStart="10dp"
+        app:endIconDrawable="@drawable/ic_send"
+        app:endIconMode="custom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ic_comments_user"
+        app:layout_constraintBottom_toBottomOf="@+id/ic_comments_user"
+        app:layout_constraintStart_toEndOf="@+id/ic_comments_user">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingStart="20dp"
+            android:textColor="@color/text_et_login"
+            android:textSize="14sp"
+            android:hint="@string/comments"
+            android:textColorHint="@color/text_et_hint"
+            android:background="@null"
+            android:text=""
+            android:imeOptions="actionDone"
+            android:fontFamily="@font/outfit_medium"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_comments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til_email"/>
+
+    <include
+        layout="@layout/layout_no_data_found"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til_email"
+        android:visibility="gone"/>
+
+    <fr.castorflex.android.circularprogressbar.CircularProgressBar
+        android:id="@+id/pb_comment"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:indeterminate="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        app:cpb_color="#FFee44"
+        app:cpb_colors="@array/pocket_bar_colors"
+        app:cpb_max_sweep_angle="300"
+        app:cpb_min_sweep_angle="10"
+        app:cpb_rotation_speed="1.0"
+        app:cpb_stroke_width="4dp"
+        app:cpb_sweep_speed="1.0"
+        app:layout_constraintTop_toBottomOf="@+id/til_email"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

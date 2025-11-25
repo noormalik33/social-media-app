@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/myAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:descendantFocusability="beforeDescendants"
+        android:elevation="0dp"
+        android:focusableInTouchMode="true"
+        app:elevation="0dp">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ToolbarTheme"
+            app:layout_scrollFlags="scroll|enterAlways|snap">
+
+            <ImageView
+                android:id="@+id/iv_prof_account_verify"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:padding="3dp"
+                android:src="@drawable/ic_verified"
+                android:elevation="10dp"
+                android:contentDescription="@string/verify_account"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/iv_main_settings"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="end"
+                android:padding="10dp"
+                android:src="@drawable/ic_settings"
+                app:tint="@color/ic_toolbar"
+                android:contentDescription="@string/settings"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_main_notification"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="end">
+
+                <ImageView
+                    android:id="@+id/iv1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_noti"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="@color/ic_toolbar" />
+
+                <View
+                    android:id="@+id/view_dot_noti"
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_noti_dot"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toTopOf="@+id/iv1"
+                    app:layout_constraintEnd_toEndOf="@+id/iv1"
+                    app:layout_constraintStart_toStartOf="@+id/iv1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_main_chat"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="end">
+
+                <ImageView
+                    android:id="@+id/iv2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_chat"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="@color/ic_toolbar" />
+
+                <View
+                    android:id="@+id/view_dot_chat"
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="-2dp"
+                    android:background="@drawable/bg_noti_dot"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toTopOf="@+id/iv2"
+                    app:layout_constraintEnd_toEndOf="@+id/iv2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bnv_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/bg_bottom_nav"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        app:itemIconSize="20dp"
+        app:itemIconTint="@color/bottom_nav_icon"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/menu_nav_bottom" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout_story"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="10dp" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
