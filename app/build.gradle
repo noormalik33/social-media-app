@@ -33,10 +33,17 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    // --- THIS IS THE PART YOU WERE MISSING ---
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
     }
+
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+    // ----------------------------------------
 
     buildTypes.each {
         it.buildConfigField 'String', 'SERVER_URL', SERVER_URL

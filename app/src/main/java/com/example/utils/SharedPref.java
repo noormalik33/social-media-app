@@ -1,4 +1,4 @@
-package com.example.utils;
+package blogtalk.com.utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;

@@ -1,4 +1,4 @@
-package com.example.utils;
+package blogtalk.com.utils;
 
 import okhttp3.MediaType;
 import okhttp3.RequestBody;

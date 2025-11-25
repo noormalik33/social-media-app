@@ -1,8 +1,8 @@
-package com.example.interfaces;
+package blogtalk.com.interfaces;
 
 import android.view.View;
 
-import com.example.items.ItemComments;
+import blogtalk.com.items.ItemComments;
 
 public interface DoubleClickListener {
 

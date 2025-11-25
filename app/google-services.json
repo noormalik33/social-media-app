@@ -1,43 +1,26 @@
 {
   "project_info": {
-    "project_number": "3520309722",
-    "firebase_url": "https://codecanyon-cede9.firebaseio.com",
-    "project_id": "codecanyon-cede9",
-    "storage_bucket": "codecanyon-cede9.appspot.com"
+    "project_number": "831945510246",
+    "project_id": "blogtalk-60cfd",
+    "storage_bucket": "blogtalk-60cfd.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:3520309722:android:c7b792a2ea552d349b78e3",
+        "mobilesdk_app_id": "1:831945510246:android:fbd1fc26310ae2a2954ca7",
         "android_client_info": {
-          "package_name": "com.example.socialmedia"
+          "package_name": "blogtalk.com"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "3520309722-a0e82qitamnsntik8ov87b83184kfer0.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyD9Xp7EdiFdlilyxdXqXLmVCzZKjP7H5cI"
-        },
-        {
-          "current_key": "AIzaSyAsmbddNo6hVFNkm55fmraBxGGC85dii5o"
-        },
-        {
-          "current_key": "AIzaSyAVnzNKyCepWc3GuSJVmrlJpgnF6m-P55Q"
+          "current_key": "AIzaSyDmmT_UYhRl3H2jF2skDkkC8mJk7PLOx2M"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "3520309722-a0e82qitamnsntik8ov87b83184kfer0.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }

@@ -1,4 +1,4 @@
-package com.example.socialmedia;
+package blogtalk.com.socialmedia;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -13,15 +13,15 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.adapters.AdapterUserFollowers;
-import com.example.apiservices.APIClient;
-import com.example.apiservices.APIInterface;
-import com.example.apiservices.RespFollowUserList;
-import com.example.items.ItemUser;
-import com.example.utils.Constants;
-import com.example.utils.EndlessRecyclerViewScrollListener;
-import com.example.utils.Methods;
-import com.example.utils.SharedPref;
+import blogtalk.com.adapters.AdapterUserFollowers;
+import blogtalk.com.apiservices.APIClient;
+import blogtalk.com.apiservices.APIInterface;
+import blogtalk.com.apiservices.RespFollowUserList;
+import blogtalk.com.items.ItemUser;
+import blogtalk.com.utils.Constants;
+import blogtalk.com.utils.EndlessRecyclerViewScrollListener;
+import blogtalk.com.utils.Methods;
+import blogtalk.com.utils.SharedPref;
 
 import java.util.ArrayList;
 

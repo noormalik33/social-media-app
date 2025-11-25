@@ -1,4 +1,4 @@
-package com.example.socialmedia;
+package blogtalk.com.socialmedia;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,11 +10,11 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.adapters.AdapterLinks;
-import com.example.items.ItemLinks;
-import com.example.utils.Constants;
-import com.example.utils.Methods;
-import com.example.utils.SharedPref;
+import blogtalk.com.adapters.AdapterLinks;
+import blogtalk.com.items.ItemLinks;
+import blogtalk.com.utils.Constants;
+import blogtalk.com.utils.Methods;
+import blogtalk.com.utils.SharedPref;
 
 import java.util.ArrayList;
 

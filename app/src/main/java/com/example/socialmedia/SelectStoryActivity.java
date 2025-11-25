@@ -1,4 +1,4 @@
-package com.example.socialmedia;
+package blogtalk.com.socialmedia;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,14 +13,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.adapters.AdapterImages;
-import com.example.interfaces.ClickListener;
-import com.example.items.ItemMedia;
-import com.example.utils.BackgroundTask;
-import com.example.utils.Constants;
-import com.example.utils.MediaStoreHelper;
-import com.example.utils.Methods;
-import com.example.utils.RecyclerItemClickListener;
+import blogtalk.com.adapters.AdapterImages;
+import blogtalk.com.interfaces.ClickListener;
+import blogtalk.com.items.ItemMedia;
+import blogtalk.com.utils.BackgroundTask;
+import blogtalk.com.utils.Constants;
+import blogtalk.com.utils.MediaStoreHelper;
+import blogtalk.com.utils.Methods;
+import blogtalk.com.utils.RecyclerItemClickListener;
 
 import java.util.ArrayList;
 

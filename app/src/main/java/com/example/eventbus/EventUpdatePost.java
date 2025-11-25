@@ -1,6 +1,6 @@
-package com.example.eventbus;
+package blogtalk.com.eventbus;
 
-import com.example.items.ItemPost;
+import blogtalk.com.items.ItemPost;
 
 import java.io.Serializable;
 

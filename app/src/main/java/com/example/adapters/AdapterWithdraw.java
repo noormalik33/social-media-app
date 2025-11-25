@@ -1,4 +1,4 @@
-package com.example.adapters;
+package blogtalk.compackage blogtalk.com.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -11,11 +11,11 @@ import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.items.ItemWithdraw;
-import com.example.socialmedia.R;
-import com.example.utils.Constants;
-import com.example.utils.Methods;
-import com.example.utils.SharedPref;
+import blogtalk.com.items.ItemWithdraw;
+import blogtalk.com.socialmedia.R;
+import blogtalk.com.utils.Constants;
+import blogtalk.com.utils.Methods;
+import blogtalk.com.utils.SharedPref;
 
 import org.jetbrains.annotations.NotNull;
 

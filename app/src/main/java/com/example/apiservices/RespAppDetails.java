@@ -1,6 +1,6 @@
-package com.example.apiservices;
+package blogtalk.com.apiservices;
 
-import com.example.items.ItemAbout;
+import blogtalk.com.items.ItemAbout;
 import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;

@@ -1,4 +1,4 @@
-package com.example.socialmedia;
+package blogtalk.com.socialmedia;
 
 import android.net.Uri;
 import android.os.Bundle;
@@ -11,10 +11,10 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
 
-import com.example.adapters.AdapterDownloadImageDetailPager;
-import com.example.adapters.AdapterDownloadVideoDetailPager;
-import com.example.utils.Constants;
-import com.example.utils.Methods;
+import blogtalk.com.adapters.AdapterDownloadImageDetailPager;
+import blogtalk.com.adapters.AdapterDownloadVideoDetailPager;
+import blogtalk.com.utils.Constants;
+import blogtalk.com.utils.Methods;
 import com.google.android.material.appbar.MaterialToolbar;
 
 import java.util.ArrayList;

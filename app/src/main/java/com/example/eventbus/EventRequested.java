@@ -1,4 +1,4 @@
-package com.example.eventbus;
+package blogtalk.com.eventbus;
 
 import java.io.Serializable;
 

@@ -1,4 +1,4 @@
-package com.example.socialmedia;
+package blogtalk.com.socialmedia;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -15,16 +15,16 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.adapters.AdapterNotification;
-import com.example.apiservices.APIClient;
-import com.example.apiservices.APIInterface;
-import com.example.apiservices.RespUserRequestsList;
-import com.example.items.ItemNotification;
-import com.example.utils.BackgroundTask;
-import com.example.utils.Constants;
-import com.example.utils.DBHelper;
-import com.example.utils.Methods;
-import com.example.utils.SharedPref;
+import blogtalk.com.adapters.AdapterNotification;
+import blogtalk.com.apiservices.APIClient;
+import blogtalk.com.apiservices.APIInterface;
+import blogtalk.com.apiservices.RespUserRequestsList;
+import blogtalk.com.items.ItemNotification;
+import blogtalk.com.utils.BackgroundTask;
+import blogtalk.com.utils.Constants;
+import blogtalk.com.utils.DBHelper;
+import blogtalk.com.utils.Methods;
+import blogtalk.com.utils.SharedPref;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.button.MaterialButton;
 import com.makeramen.roundedimageview.RoundedImageView;

@@ -1,4 +1,4 @@
-package com.example.adapters;
+package blogtalk.compackage blogtalk.com.adapters;
 
 import android.content.Context;
 import android.provider.MediaStore;
@@ -12,10 +12,10 @@ import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.interfaces.ClickListener;
-import com.example.items.ItemMedia;
-import com.example.socialmedia.R;
-import com.example.utils.Methods;
+import blogtalk.com.interfaces.ClickListener;
+import blogtalk.com.items.ItemMedia;
+import blogtalk.com.socialmedia.R;
+import blogtalk.com.utils.Methods;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;

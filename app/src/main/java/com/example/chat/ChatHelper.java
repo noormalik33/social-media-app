@@ -1,4 +1,4 @@
-package com.example.chat;
+package blogtalk.com.chat;
 
 import static io.agora.cloud.HttpClientManager.Method_POST;
 import static io.agora.cloud.HttpClientManager.Method_PUT;
@@ -20,19 +20,19 @@ import androidx.annotation.NonNull;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 
-import com.example.apiservices.APIClient;
-import com.example.apiservices.APIInterface;
-import com.example.apiservices.RespGenerateChatToken;
-import com.example.eventbus.EventCalling;
-import com.example.eventbus.GlobalBus;
-import com.example.socialmedia.MyApplication;
-import com.example.socialmedia.R;
-import com.example.socialmedia.VoiceCallActivity;
-import com.example.utils.BackgroundTask;
-import com.example.utils.Constants;
-import com.example.utils.Methods;
-import com.example.utils.SharedPref;
-import com.example.utils.VoiceCallRejectService;
+import blogtalk.com.apiservices.APIClient;
+import blogtalk.com.apiservices.APIInterface;
+import blogtalk.com.apiservices.RespGenerateChatToken;
+import blogtalk.com.eventbus.EventCalling;
+import blogtalk.com.eventbus.GlobalBus;
+import blogtalk.com.socialmedia.MyApplication;
+import blogtalk.com.socialmedia.R;
+import blogtalk.com.socialmedia.VoiceCallActivity;
+import blogtalk.com.utils.BackgroundTask;
+import blogtalk.com.utils.Constants;
+import blogtalk.com.utils.Methods;
+import blogtalk.com.utils.SharedPref;
+import blogtalk.com.utils.VoiceCallRejectService;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailabilityLight;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -78,7 +78,7 @@ import retrofit2.Response;
 public class ChatHelper {
     private static ChatHelper instance;
     private static final String AGORA_SERVER_URL = "a61.chat.agora.io";
-    private static final String AGORA_APP_URL = "612102451/1253362";
+    private static final String AGORA_APP_URL = "411426730/1627211";
     private static final String REGISTER_URL = "https://" + AGORA_SERVER_URL + "/" + AGORA_APP_URL + "/users";
     public static final String UPDATE_NICKNAME_URL = "https://" + AGORA_SERVER_URL + "/" + AGORA_APP_URL + "/users/";
     public static final String NEW_LOGIN = "NEW_LOGIN";

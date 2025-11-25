@@ -1,4 +1,4 @@
-package com.example.adapters;
+package blogtalk.compackage blogtalk.com.adapters;
 
 import android.content.Context;
 import android.net.Uri;
@@ -32,9 +32,9 @@ import androidx.media3.exoplayer.upstream.DefaultAllocator;
 import androidx.media3.ui.PlayerView;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.socialmedia.R;
-import com.example.utils.Constants;
-import com.example.utils.Methods;
+import blogtalk.com.socialmedia.R;
+import blogtalk.com.utils.Constants;
+import blogtalk.com.utils.Methods;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;

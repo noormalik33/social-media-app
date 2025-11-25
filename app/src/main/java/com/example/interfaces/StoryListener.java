@@ -1,4 +1,4 @@
-package com.example.interfaces;
+package blogtalk.com.interfaces;
 
 public interface StoryListener {
     void onNextStory();

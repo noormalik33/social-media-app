@@ -1,6 +1,6 @@
-package com.example.apiservices;
+package blogtalk.com.apiservices;
 
-import com.example.items.ItemSuccess;
+import blogtalk.com.items.ItemSuccess;
 import com.google.gson.Gson;
 import com.google.gson.TypeAdapter;
 import com.google.gson.annotations.JsonAdapter;

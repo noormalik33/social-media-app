@@ -1,4 +1,4 @@
-package com.example.socialmedia;
+package blogtalk.com.socialmedia;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
@@ -12,13 +12,13 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
-import com.example.apiservices.APIClient;
-import com.example.apiservices.APIInterface;
-import com.example.apiservices.RespSuccess;
-import com.example.items.ItemLinks;
-import com.example.utils.Constants;
-import com.example.utils.Methods;
-import com.example.utils.SharedPref;
+import blogtalk.com.apiservices.APIClient;
+import blogtalk.com.apiservices.APIInterface;
+import blogtalk.com.apiservices.RespSuccess;
+import blogtalk.com.items.ItemLinks;
+import blogtalk.com.utils.Constants;
+import blogtalk.com.utils.Methods;
+import blogtalk.com.utils.SharedPref;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;

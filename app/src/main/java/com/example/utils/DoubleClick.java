@@ -1,9 +1,9 @@
-package com.example.utils;
+package blogtalk.com.utils;
 
 import android.os.Handler;
 import android.view.View;
 
-import com.example.interfaces.DoubleClickListener;
+import blogtalk.com.interfaces.DoubleClickListener;
 
 public class DoubleClick implements View.OnClickListener {
 

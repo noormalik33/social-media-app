@@ -1,4 +1,4 @@
-package com.example.fragments;
+package blogtalk.com.fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,17 +15,17 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
-import com.example.adapters.AdapterUserPost;
-import com.example.apiservices.APIClient;
-import com.example.apiservices.APIInterface;
-import com.example.apiservices.RespPostList;
-import com.example.items.ItemPost;
-import com.example.socialmedia.PostByUserListActivity;
-import com.example.socialmedia.R;
-import com.example.utils.Constants;
-import com.example.utils.EndlessRecyclerViewScrollListener;
-import com.example.utils.Methods;
-import com.example.utils.SharedPref;
+import blogtalk.com.adapters.AdapterUserPost;
+import blogtalk.com.apiservices.APIClient;
+import blogtalk.com.apiservices.APIInterface;
+import blogtalk.com.apiservices.RespPostList;
+import blogtalk.com.items.ItemPost;
+import blogtalk.com.socialmedia.PostByUserListActivity;
+import blogtalk.com.socialmedia.R;
+import blogtalk.com.utils.Constants;
+import blogtalk.com.utils.EndlessRecyclerViewScrollListener;
+import blogtalk.com.utils.Methods;
+import blogtalk.com.utils.SharedPref;
 
 import java.util.ArrayList;
 

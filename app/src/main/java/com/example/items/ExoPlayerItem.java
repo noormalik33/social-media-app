@@ -1,4 +1,4 @@
-package com.example.items;
+package blogtalk.com.items;
 
 
 import androidx.media3.exoplayer.ExoPlayer;

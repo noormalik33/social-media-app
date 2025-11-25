@@ -1,4 +1,4 @@
-package com.example.socialmedia;
+package blogtalk.com.socialmedia;
 
 import android.content.Intent;
 import android.graphics.PorterDuff;
@@ -15,15 +15,15 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
-import com.example.eventbus.EventRequested;
-import com.example.eventbus.GlobalBus;
-import com.example.interfaces.InterAdListener;
-import com.example.interfaces.MoreOptionListener;
-import com.example.items.ItemPost;
-import com.example.items.ItemUser;
-import com.example.utils.Constants;
-import com.example.utils.Methods;
-import com.example.utils.SharedPref;
+import blogtalk.com.eventbus.EventRequested;
+import blogtalk.com.eventbus.GlobalBus;
+import blogtalk.com.interfaces.InterAdListener;
+import blogtalk.com.interfaces.MoreOptionListener;
+import blogtalk.com.items.ItemPost;
+import blogtalk.com.items.ItemUser;
+import blogtalk.com.utils.Constants;
+import blogtalk.com.utils.Methods;
+import blogtalk.com.utils.SharedPref;
 import com.google.android.material.button.MaterialButton;
 import com.makeramen.roundedimageview.RoundedImageView;
 import com.squareup.picasso.Picasso;

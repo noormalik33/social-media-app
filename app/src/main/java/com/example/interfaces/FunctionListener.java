@@ -1,8 +1,8 @@
-package com.example.interfaces;
+package blogtalk.com.interfaces;
 
-import com.example.apiservices.RespUserList;
-import com.example.items.ItemComments;
-import com.example.items.ItemUser;
+import blogtalk.com.apiservices.RespUserList;
+import blogtalk.com.items.ItemComments;
+import blogtalk.com.items.ItemUser;
 
 import java.util.ArrayList;
 

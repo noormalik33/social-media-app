@@ -1,4 +1,4 @@
-package com.example.utils;
+package blogtalk.com.utils;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;

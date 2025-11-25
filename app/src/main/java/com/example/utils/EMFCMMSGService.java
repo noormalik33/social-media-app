@@ -1,4 +1,4 @@
-package com.example.utils;
+package blogtalk.com.utils;
 
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -17,10 +17,10 @@ import androidx.annotation.NonNull;
 import androidx.core.app.NotificationCompat;
 import androidx.core.content.ContextCompat;
 
-import com.example.chat.ChatHelper;
-import com.example.items.ItemChatList;
-import com.example.socialmedia.ChatListActivity;
-import com.example.socialmedia.R;
+import blogtalk.com.chat.ChatHelper;
+import blogtalk.com.items.ItemChatList;
+import blogtalk.com.socialmedia.ChatListActivity;
+import blogtalk.com.socialmedia.R;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 

@@ -1,4 +1,4 @@
-package com.example.socialmedia;
+package blogtalk.com.socialmedia;
 
 import static com.example.chat.ChatHelper.UPDATE_NICKNAME;
 
@@ -17,15 +17,15 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
-import com.example.adapters.AdapterChatList;
-import com.example.chat.ChatHelper;
-import com.example.interfaces.FunctionListener;
-import com.example.items.ItemChatList;
-import com.example.items.ItemUser;
-import com.example.utils.Constants;
-import com.example.utils.DBHelper;
-import com.example.utils.Methods;
-import com.example.utils.SharedPref;
+import blogtalk.com.adapters.AdapterChatList;
+import blogtalk.com.chat.ChatHelper;
+import blogtalk.com.interfaces.FunctionListener;
+import blogtalk.com.items.ItemChatList;
+import blogtalk.com.items.ItemUser;
+import blogtalk.com.utils.Constants;
+import blogtalk.com.utils.DBHelper;
+import blogtalk.com.utils.Methods;
+import blogtalk.com.utils.SharedPref;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;

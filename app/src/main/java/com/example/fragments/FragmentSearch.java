@@ -1,4 +1,4 @@
-package com.example.fragments;
+package blogtalk.com.fragments;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -16,8 +16,8 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
 
-import com.example.socialmedia.R;
-import com.example.utils.Methods;
+import blogtalk.com.socialmedia.R;
+import blogtalk.com.utils.Methods;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 import com.google.android.material.textfield.TextInputEditText;

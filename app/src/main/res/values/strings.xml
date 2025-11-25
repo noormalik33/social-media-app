@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">BlogTalk</string>
 
-    <string name="agora_chat_app_key">612102451#1253362</string>
-    <string name="firebase_key">3520319724</string>
+    <string name="agora_chat_app_key">411426730#1627211</string>
+    <string name="firebase_key">831945510246</string>
 
     <string name="onesignal_app_id">99a7399d-829e-4baa-89d9-c12fe9bf0d0f</string>
 

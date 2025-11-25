@@ -1,4 +1,4 @@
-package com.example.socialmedia;
+package blogtalk.com.socialmedia;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -15,13 +15,13 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.apiservices.APIClient;
-import com.example.apiservices.APIInterface;
-import com.example.apiservices.RespAppDetails;
-import com.example.utils.Constants;
-import com.example.utils.DBHelper;
-import com.example.utils.Methods;
-import com.example.utils.SharedPref;
+import blogtalk.com.apiservices.APIClient;
+import blogtalk.com.apiservices.APIInterface;
+import blogtalk.com.apiservices.RespAppDetails;
+import blogtalk.com.utils.Constants;
+import blogtalk.com.utils.DBHelper;
+import blogtalk.com.utils.Methods;
+import blogtalk.com.utils.SharedPref;
 import com.google.android.material.card.MaterialCardView;
 import com.squareup.picasso.Picasso;
 

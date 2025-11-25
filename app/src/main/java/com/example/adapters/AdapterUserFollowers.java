@@ -1,4 +1,4 @@
-package com.example.adapters;
+package blogtalk.compackage blogtalk.com.adapters;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -12,11 +12,11 @@ import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.items.ItemUser;
-import com.example.socialmedia.ProfileActivity;
-import com.example.socialmedia.R;
-import com.example.utils.Methods;
-import com.example.utils.SharedPref;
+import blogtalk.com.items.ItemUser;
+import blogtalk.com.socialmedia.ProfileActivity;
+import blogtalk.com.socialmedia.R;
+import blogtalk.com.utils.Methods;
+import blogtalk.com.utils.SharedPref;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textview.MaterialTextView;
 import com.squareup.picasso.Picasso;

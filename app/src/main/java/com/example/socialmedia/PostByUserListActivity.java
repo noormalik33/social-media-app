@@ -1,4 +1,4 @@
-package com.example.socialmedia;
+package blogtalk.com.socialmedia;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -12,17 +12,17 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.adapters.AdapterPosts;
-import com.example.apiservices.APIClient;
-import com.example.apiservices.APIInterface;
-import com.example.apiservices.RespPostList;
-import com.example.eventbus.EventUpdatePost;
-import com.example.eventbus.GlobalBus;
-import com.example.items.ItemPost;
-import com.example.utils.Constants;
-import com.example.utils.EndlessRecyclerViewScrollListener;
-import com.example.utils.Methods;
-import com.example.utils.SharedPref;
+import blogtalk.com.adapters.AdapterPosts;
+import blogtalk.com.apiservices.APIClient;
+import blogtalk.com.apiservices.APIInterface;
+import blogtalk.com.apiservices.RespPostList;
+import blogtalk.com.eventbus.EventUpdatePost;
+import blogtalk.com.eventbus.GlobalBus;
+import blogtalk.com.items.ItemPost;
+import blogtalk.com.utils.Constants;
+import blogtalk.com.utils.EndlessRecyclerViewScrollListener;
+import blogtalk.com.utils.Methods;
+import blogtalk.com.utils.SharedPref;
 
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;

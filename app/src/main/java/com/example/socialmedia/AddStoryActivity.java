@@ -1,4 +1,4 @@
-package com.example.socialmedia;
+package blogtalk.com.socialmedia;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -23,17 +23,17 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.palette.graphics.Palette;
 
-import com.example.apiservices.APIClient;
-import com.example.apiservices.APIInterface;
-import com.example.apiservices.RespSuccess;
-import com.example.items.ItemMedia;
-import com.example.utils.BackgroundTask;
-import com.example.utils.Constants;
-import com.example.utils.CountingRequestBody;
-import com.example.utils.Methods;
-import com.example.utils.PaletteUtils;
-import com.example.utils.SharedPref;
-import com.example.utils.UploadService;
+import blogtalk.com.apiservices.APIClient;
+import blogtalk.com.apiservices.APIInterface;
+import blogtalk.com.apiservices.RespSuccess;
+import blogtalk.com.items.ItemMedia;
+import blogtalk.com.utils.BackgroundTask;
+import blogtalk.com.utils.Constants;
+import blogtalk.com.utils.CountingRequestBody;
+import blogtalk.com.utils.Methods;
+import blogtalk.com.utils.PaletteUtils;
+import blogtalk.com.utils.SharedPref;
+import blogtalk.com.utils.UploadService;
 import com.google.android.material.button.MaterialButton;
 import com.squareup.picasso.Picasso;
 import com.squareup.picasso.Target;

@@ -1,4 +1,4 @@
-package com.example.fragments;
+package blogtalk.com.fragments;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -14,23 +14,23 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
-import com.example.adapters.AdapterHomePosts;
-import com.example.apiservices.APIClient;
-import com.example.apiservices.APIInterface;
-import com.example.apiservices.RespHomeList;
-import com.example.apiservices.RespStories;
-import com.example.eventbus.EventLike;
-import com.example.eventbus.EventRequested;
-import com.example.eventbus.EventStoryUpload;
-import com.example.eventbus.GlobalBus;
-import com.example.items.ItemPost;
-import com.example.items.ItemStories;
-import com.example.socialmedia.R;
-import com.example.utils.Constants;
-import com.example.utils.DBHelper;
-import com.example.utils.EndlessRecyclerViewScrollListener;
-import com.example.utils.Methods;
-import com.example.utils.SharedPref;
+import blogtalk.com.adapters.AdapterHomePosts;
+import blogtalk.com.apiservices.APIClient;
+import blogtalk.com.apiservices.APIInterface;
+import blogtalk.com.apiservices.RespHomeList;
+import blogtalk.com.apiservices.RespStories;
+import blogtalk.com.eventbus.EventLike;
+import blogtalk.com.eventbus.EventRequested;
+import blogtalk.com.eventbus.EventStoryUpload;
+import blogtalk.com.eventbus.GlobalBus;
+import blogtalk.com.items.ItemPost;
+import blogtalk.com.items.ItemStories;
+import blogtalk.com.socialmedia.R;
+import blogtalk.com.utils.Constants;
+import blogtalk.com.utils.DBHelper;
+import blogtalk.com.utils.EndlessRecyclerViewScrollListener;
+import blogtalk.com.utils.Methods;
+import blogtalk.com.utils.SharedPref;
 
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;

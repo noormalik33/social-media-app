@@ -1,4 +1,4 @@
-package com.example.adapters;
+package blogtalk.compackage blogtalk.com.adapters;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,10 +10,10 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.items.ItemPage;
-import com.example.socialmedia.AboutActivity;
-import com.example.socialmedia.R;
-import com.example.socialmedia.WebviewActivity;
+import blogtalk.com.items.ItemPage;
+import blogtalk.com.socialmedia.AboutActivity;
+import blogtalk.com.socialmedia.R;
+import blogtalk.com.socialmedia.WebviewActivity;
 
 import java.util.ArrayList;
 

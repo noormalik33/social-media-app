@@ -1,4 +1,4 @@
-package com.example.socialmedia;
+package blogtalk.com.socialmedia;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
@@ -21,16 +21,16 @@ import com.canhub.cropper.CropImageContract;
 import com.canhub.cropper.CropImageContractOptions;
 import com.canhub.cropper.CropImageOptions;
 import com.canhub.cropper.CropImageView;
-import com.example.apiservices.APIClient;
-import com.example.apiservices.APIInterface;
-import com.example.apiservices.RespUpdatePost;
-import com.example.eventbus.EventUpdatePost;
-import com.example.eventbus.GlobalBus;
-import com.example.items.ItemPost;
-import com.example.utils.Constants;
-import com.example.utils.CountingRequestBody;
-import com.example.utils.Methods;
-import com.example.utils.SharedPref;
+import blogtalk.com.apiservices.APIClient;
+import blogtalk.com.apiservices.APIInterface;
+import blogtalk.com.apiservices.RespUpdatePost;
+import blogtalk.com.eventbus.EventUpdatePost;
+import blogtalk.com.eventbus.GlobalBus;
+import blogtalk.com.items.ItemPost;
+import blogtalk.com.utils.Constants;
+import blogtalk.com.utils.CountingRequestBody;
+import blogtalk.com.utils.Methods;
+import blogtalk.com.utils.SharedPref;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
 

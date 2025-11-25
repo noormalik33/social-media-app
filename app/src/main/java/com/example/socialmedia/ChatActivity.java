@@ -1,4 +1,4 @@
-package com.example.socialmedia;
+package blogtalk.com.socialmedia; // Updated Package Name
 
 import static android.Manifest.permission.BLUETOOTH_CONNECT;
 import static android.Manifest.permission.READ_PHONE_STATE;
@@ -23,14 +23,17 @@ import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.adapters.AdapterChat;
-import com.example.chat.ChatHelper;
-import com.example.items.ItemChatList;
-import com.example.items.ItemUser;
-import com.example.utils.Constants;
-import com.example.utils.DBHelper;
-import com.example.utils.Methods;
-import com.example.utils.SharedPref;
+// Updated Imports to blogtalk.com
+import blogtalk.com.R;
+import blogtalk.com.adapters.AdapterChat;
+import blogtalk.com.chat.ChatHelper;
+import blogtalk.com.items.ItemChatList;
+import blogtalk.com.items.ItemUser;
+import blogtalk.com.utils.Constants;
+import blogtalk.com.utils.DBHelper;
+import blogtalk.com.utils.Methods;
+import blogtalk.com.utils.SharedPref;
+
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
@@ -111,7 +114,7 @@ public class ChatActivity extends AppCompatActivity {
                 super.onScrolled(recyclerView, dx, dy);
                 if (!isOver) {
                     int firstVisibleItemPosition = llm.findFirstCompletelyVisibleItemPosition();
-                        if (dy < 0 && firstVisibleItemPosition == 0 && !isLoadMore) {
+                    if (dy < 0 && firstVisibleItemPosition == 0 && !isLoadMore) {
                         pb_loadMore.setVisibility(View.VISIBLE);
                         getPreviousChat();
                     }

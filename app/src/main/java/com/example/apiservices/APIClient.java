@@ -1,6 +1,6 @@
-package com.example.apiservices;
+package blogtalk.com.apiservices;
 
-import com.example.utils.Constants;
+import blogtalk.com.utils.Constants;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
