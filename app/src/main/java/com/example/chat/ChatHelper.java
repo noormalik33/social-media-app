@@ -78,7 +78,7 @@ import retrofit2.Response;
 public class ChatHelper {
     private static ChatHelper instance;
     private static final String AGORA_SERVER_URL = "a41.chat.agora.io";
-    private static final String AGORA_APP_URL = "612102451/1253362";
+    private static final String AGORA_APP_URL = "411426730/1627211";
     private static final String REGISTER_URL = "https://" + AGORA_SERVER_URL + "/" + AGORA_APP_URL + "/users";
     public static final String UPDATE_NICKNAME_URL = "https://" + AGORA_SERVER_URL + "/" + AGORA_APP_URL + "/users/";
     public static final String NEW_LOGIN = "NEW_LOGIN";
